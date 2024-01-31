@@ -1,3 +1,26 @@
+const events = [
+  {
+    title: "Movie Night Under the Stars",
+    description: "Join us for a screening of 'Casablanca' in the park. Bring your blankets and picnic baskets!",
+    date: new Date(2024, 2, 10), // March 10, 2024
+    rsvpLink: "https://example.com/rsvp/movie-night"
+  },
+  {
+    title: "Coding Workshop for Beginners",
+    description: "Learn the basics of HTML, CSS, and JavaScript in this interactive workshop.",
+    date: new Date(2024, 4, 27), // May 27, 2024
+    rsvpLink: "https://example.com/rsvp/coding-workshop"
+  },
+  {
+    title: "Summer Festival",
+    description: "Celebrate the summer with live music, food trucks, and fun activities for the whole family!",
+    date: new Date(2024, 6, 15), // July 15, 2024
+    rsvpLink: "https://example.com/rsvp/summer-festival"
+  },
+];
+
+
+
 const codeActionButtons = [
   {
     icon: 'copy',

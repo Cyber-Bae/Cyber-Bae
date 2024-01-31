@@ -8,6 +8,48 @@
 .bg-landing
   background-color: $haze
   color: var(--text)
+#events-container
+  @media (max-width:629px)
+    // width: 100% --for later use
+    img
+      display: none
+  width: 100%
+  h1
+    margin-left: 2%
+  .event-card
+    margin: 2%
+    padding: 10px
+    background: var(--table-bg)
+    display: flex
+    border-radius: 0.5rem
+    .button
+      height: 3%
+      margin-top: 5%
+      margin-right: 10%
+    .event-description
+      display: flex
+      // margin: 15%
+      width: 75%
+      h3
+        font-weight: bold
+      
+      img
+        width: 20%
+        margin-right: 10%
+        margin-left: -10%
+
+    .date 
+      width: 5%
+      // margin-left: 3%
+      margin: 3%
+      margin-right: 20%
+      h3
+        font-weight: bolder
+        text-transform: uppercase
+        margin-bottom: -5%
+
+    
+
 .header
   top: 0
   left: 0
@@ -27,13 +69,6 @@
     b
       color: var(--highlight)
 
-  .call-to-action
-    background-color: #000
-    color: #fff
-    padding: 10px 20px
-    border: none
-    border-radius: 5px
-    cursor: pointer
 
   .call-to-action:hover
     background-color: #333
