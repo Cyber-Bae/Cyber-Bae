@@ -1,20 +1,4 @@
-{{ $pages := .Pages }}
-{{ if .IsHome }}
-{{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{ end }}
-
-{{ if eq site.Params.pinFeatured true }}
-{{ $featured := default 8 site.Params.numberOfPinnedPosts }}
-{{ $featuredPosts := first $featured (where $pages "Params.featured" true)}}
-{{ $normalPosts := $pages | symdiff $featuredPosts }}
-{{ $pages = $featuredPosts | append $normalPosts }}
-{{ end }}
-
-
-<!-- <script>
-
-  // Array of dummy events
-  const eventDic = [
+const eventDic = [
     {
       title: "Create a Personalized Email Signature with HTML, CSS, and JavaScript",
       description: "Join us for a screening of 'Casablanca' in the park. Bring your blankets and picnic baskets!",
@@ -128,61 +112,3 @@
     createPaginationButtons(); // Create initial pagination buttons
 
   });
-
-</script> -->
-
-
-
-<style>
-  #events-pagination {
-  /* Overall styling for the pagination container */
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-
-
-#events-pagination button:hover {
-  /* Hover effect for all buttons */
-  background-color: #eee;
-}
-
-#events-pagination .prev, #events-pagination .next {
-  /* Specific styling for arrow buttons */
-  background-color: #fff;
-}
-
-#events-pagination .current {
-  /* Styling for the active page number button */
-  background-color: #ddd;
-}
-</style>
-
-
-<header class="header">
-  <h1 class="tagline">Tech with Heart. Code with Purpose. <b>Join the Movement.</b></h1>
-  <a href="#" class="button">Become a Changemaker</a>
-</header>
-
-<div id="events-container">
-  <h1>Upcoming Events</h1>
-  <div id="event-cards"></div>
-  <div id="events-pagination"></div>
-</div>
-</div>
-
-<div class="grid-inverse wrap content">
-  <div>
-
-    <ul class="posts" id="posts">
-      {{- range (.Paginate $pages).Pages }}
-      {{ partial "excerpt" . }}
-      {{- end }}
-      <li>
-        {{- template "_internal/pagination.html" . }}
-      </li>
-    </ul>
-  </div>
-  {{- partial "sidebar" . }}
-</div>

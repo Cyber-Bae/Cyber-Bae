@@ -2,6 +2,9 @@
 {{ $highlightPath := "js/highlight.js" }}
 {{ $highlight := resources.Get $highlightPath | resources.ExecuteAsTemplate $highlightPath . }}
 
+{{ $eventsScriptPath := "js/events.js" }}
+{{ $events := resources.Get $eventsScriptPath | resources.ExecuteAsTemplate $eventsScriptPath . }}
+
 {{ $variablesScriptPath := "js/variables.js" }}
 {{ $variables := resources.Get $variablesScriptPath | resources.ExecuteAsTemplate (printf "%s/js/variables.js" .Lang) . }}
 
@@ -21,6 +24,6 @@
 {{ $main := resources.Get $mainScriptPath | resources.ExecuteAsTemplate $mainScriptPath . }}
 
 {{ $bundlePath := (printf "%s/js/bundle.js" .Lang ) }}
-{{ $bundle := slice $highlight $variables $functions $code $main $custom | resources.Concat $bundlePath | resources.Fingerprint "sha512" }}
+{{ $bundle := slice $highlight $variables $functions $events $code $main $custom | resources.Concat $bundlePath | resources.Fingerprint "sha512" }}
 
 {{ return $bundle }}
