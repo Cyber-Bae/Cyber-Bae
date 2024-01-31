@@ -1,51 +1,51 @@
 [[main]]
-  name = "Home"
-  url = ""
-  weight = -110
+name = "Home"
+url = ""
+weight = -110
 
-[[main]]
-  name = "Archives"
-  url = "post/rich-content/"
-  weight = -109
+# [[main]]
+# name = "Archives"
+# url = "post/rich-content/"
+# weight = -109
 
 # Submenus are done this way: parent -> identifier
 [[main]]
-  name = "Links"
-  identifier = "Links"
-  weight = -108
+identifier = "Links"
+name = "Links"
+weight = -108
 [[main]]
-  parent = "Links"
-  name = "LinkedIn"
-  url = "https://www.linkedin.com/"
+name = "Bootcamps"
+parent = "Links"
+url = "#"
 [[main]]
-  parent = "Links"
-  name = "Twitter"
-  url = "https://twitter.com/"
+name = "Membership"
+parent = "Links"
+url = "#"
 
 [[main]]
-  name = "About"
-  url = "about/"
-  weight = -107
+name = "About"
+url = "about/"
+weight = -107
 
 # social menu links
 
 [[social]]
-  name = "github"
-  type = "social"
-  weight = 1
-  url = "https://github.com/#"
+name = "github"
+type = "social"
+url = "https://github.com/#"
+weight = 1
 [[social]]
-  name = "twitter"
-  weight = 2
-  url = "https://twitter.com/#"
+name = "twitter"
+url = "https://twitter.com/#"
+weight = 2
 [[social]]
-  name = "linkedin"
-  weight = 3
-  url = "https://www.linkedin.com/in/#"
+name = "linkedin"
+url = "https://www.linkedin.com/in/#"
+weight = 3
 [[social]]
-  name = "rss"
-  weight = 4
-  url = "index.xml"
+name = "rss"
+url = "index.xml"
+weight = 4
 
 # other supported social links
 # name = "youtube"
