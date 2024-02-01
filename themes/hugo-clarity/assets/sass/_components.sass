@@ -11,50 +11,46 @@ body
   background-color: $haze
   color: var(--text)
 #events-container
+  width: 75%
   @media (max-width:629px)
+    width: 100%
     .event-card
       display: block !important
+      // width: 100%
     .date
       margin-right: 10%
-    img
+      line-height: 1
+    picture
       display: none
       width: 100%
-  h1
-    margin-left: 2%
+    .event-description
+      width: 100% !important
+
   .event-card
     margin: 2%
-    padding: 10px
+    padding: 2px
+    padding-block: 3px
     background: var(--table-bg)
     display: flex
     border-radius: 0.5rem
+    box-sizing: border-box
+    picture
+      width: 40%
+      margin-top: 5%
+      margin-right: 2%
     .button
       height: 2%
       margin-top: 5%
       margin-right: 10%
     .event-description
       display: flex
-      // margin: 15%
-      width: 65%
-
-      h3
-        font-weight: bold
-        font-size: 150%
-
-      img
-        width: 30%
-        margin-right: 10%
-        margin-left: -10%
-
+      width: 75%
+      
     .date
       width: 5%
-      // margin-left: 3%
-      margin: 3%
-      margin-right: 10%
-      h3
-        font-weight: bolder
-        text-transform: uppercase
-        margin-bottom: -5%
-        font-size: 150%
+      margin-right: 5%
+      margin-left: 2%
+
 
 .header
   top: 0

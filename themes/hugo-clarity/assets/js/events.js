@@ -55,8 +55,8 @@ const eventDic = [
         eventCard.innerHTML = `
       <div class="date"><h3>${monthAbbr}</h3><h1>${event.date.getDate()}</h1></div>
       <div class="event-description">
-        <img loading="lazy" src=${event.img}>
-        <h3 class="post_link">${event.title}</h3>
+        <picture><img loading="lazy" src=${event.img}></picture>
+        <h3 class="post_link"><a href="#">${event.title}</a></h3>
       </div>
       <a href="${event.rsvpLink}" class="button ">RSVP</a>
     `;
