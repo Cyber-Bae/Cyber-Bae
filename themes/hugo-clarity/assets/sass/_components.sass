@@ -5,6 +5,8 @@
   border-right: 0.33rem solid transparent
   top: -0.5rem
   left: 1rem
+body
+  overflow-x: hidden
 .bg-landing
   background-color: $haze
   color: var(--text)
@@ -66,14 +68,27 @@
   text-align: left
   color: #fff
   padding: 10px
-  overflow: none
-  background-image: url("https://images.unsplash.com/photo-1665686304312-16e3a16be0ed?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+  margin-bottom: 10%
+  @media (max-width:629px)
+    .tagline
+      font-size: 200%
+    
+    img
+      width: 800px !important
+  img
+    position: absolute
+    float: right
+    z-index: -100
+    width: 70%
+    left: 50%
+    top: 3%
+    
+
 
   .tagline
     font-size: 250%
     margin-bottom: 1rem
-    @media (max-width:629px)
-      font-size: 200%
+  
 
     b
       color: var(--highlight)
