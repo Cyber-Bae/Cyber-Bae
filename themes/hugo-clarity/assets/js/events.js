@@ -9,19 +9,19 @@ const eventDic = [
     {
       title: "Unlock Your Job Potential: Build a Resume That Gets You Noticed",
       description: "Learn the basics of HTML, CSS, and JavaScript in this interactive workshop.",
-      date: new Date(2024, 4, 27), // May 27, 2024
+      date: new Date(2024, 2, 21), // May 27, 2024
       rsvpLink: "https://example.com/rsvp/coding-workshop"
     },
     {
-      title: "Unlock Your Job Potential: Build a Resume That Gets You Noticed",
+      title: "Land Your Dream Job: A Masterclass in Job Hunting Success",
       description: "Learn the basics of HTML, CSS, and JavaScript in this interactive workshop.",
-      date: new Date(2024, 4, 27), // May 27, 2024
+      date: new Date(2024, 2, 28), // May 27, 2024
       rsvpLink: "https://example.com/rsvp/coding-workshop"
     },
     {
-      title: "Unlock Your Job Potential: Build a Resume That Gets You Noticed",
+      title: "Beyond the Chat: Supercharge Your Productivity with ChatGPT",
       description: "Learn the basics of HTML, CSS, and JavaScript in this interactive workshop.",
-      date: new Date(2024, 4, 27), // May 27, 2024
+      date: new Date(2024, 3, 6), // May 27, 2024
       rsvpLink: "https://example.com/rsvp/coding-workshop"
     },
   ];
@@ -38,7 +38,12 @@ const eventDic = [
     const eventsPerPage = 2;
 
     // Create event card elements for the current page
-    function displayPage(pageNumber) {
+    function displayPage(pageNumber, numPages) {
+      let nextButton = document.getElementById("nextBtn")
+
+      if (pageNumber < numPages && nextButton.style.visibility == "hidden"){
+        nextButton.style.visibility="visible"
+      }
       eventsContainer.innerHTML = ""; // Clear the container for new events
 
       const startIndex = (pageNumber - 1) * eventsPerPage;
@@ -90,6 +95,12 @@ const eventDic = [
     const button = document.createElement("button");
     button.textContent = i;
     button.addEventListener("click", () => {
+      let nextButton = document.getElementById("nextBtn")
+      if (currentPage < numPages && nextButton.style.visibility == "hidden"){
+        nextButton.style.visibility="visible"
+      }else{
+        nextButton.style.visibility="hidden"
+      }
       currentPage = i;
       displayPage(i);
     });
@@ -99,10 +110,24 @@ const eventDic = [
   // Create next arrow button (if needed)
   if (currentPage < numPages) {
     const nextButton = document.createElement("button");
-    nextButton.textContent = "Next"; // Or use an arrow icon
+    nextButton.setAttribute("id", "nextBtn")
+    const backButton = document.createElement("button")
+    nextButton.textContent = ">"; // Or use an arrow icon
+    backButton.textContent = "<"
     nextButton.addEventListener("click", () => {
       currentPage++;
+      displayPage(currentPage, numPages);
+      if (currentPage >= numPages){
+        nextButton.style.visibility ="hidden"
+      }
+    });
+  
+    backButton.addEventListener("click", () => {
+      currentPage--;
       displayPage(currentPage);
+      if (currentPage <= numPages[0]){
+        backButton.style.display ="none"
+      }
     });
     eventsPagination.appendChild(nextButton);
   }
