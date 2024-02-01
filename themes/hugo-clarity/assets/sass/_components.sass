@@ -5,21 +5,13 @@
   border-right: 0.33rem solid transparent
   top: -0.5rem
   left: 1rem
-body
-  overflow-x: hidden
-  // overflow: none
-.bg-landing
-  background-color: $haze
-  color: var(--text)
-#events-container
-  width: 75%
-  margin-left: 2%
-  @media (max-width:629px)
-    margin: 0 auto
-    width: 100%
+
+@media (max-width:629px)
+  #events-container
+    margin: 0 auto !important
+    width: 100% !important
     .event-card
       display: block !important
-      // width: 100%
     .date
       margin-right: 10%
       line-height: 1
@@ -29,6 +21,14 @@ body
     .event-description
       width: 100% !important
 
+body
+  overflow-x: hidden
+.bg-landing
+  background-color: $haze
+  color: var(--text)
+#events-container
+  width: 75%
+  margin-left: 2%
   .event-card
     margin: 2%
     padding: 2px
@@ -59,7 +59,7 @@ body
   width: 100%
   position: absolute
   z-index: -100
-.left_img
+.accent_img_left
   float: left
   position: absolute
   z-index: -100
