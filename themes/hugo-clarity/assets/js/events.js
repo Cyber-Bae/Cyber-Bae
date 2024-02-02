@@ -22,32 +22,32 @@ const perkDic = [
 
 // this is for the events
 const eventDic = [
-  {
-    title: "Create a Personalized Email Signature with HTML, CSS, and JavaScript",
-    description: "Join us for a screening of 'Casablanca' in the park. Bring your blankets and picnic baskets!",
-    date: new Date(2024, 2, 10), // March 10, 2024
-    rsvpLink: "https://example.com/rsvp/movie-night",
-    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHG-NEvn5-XaIVLKT_WOeYSrafCulPM7JCt_f9flT5zZP4jMQCA9mOYcrMpuxM8rjgSMaBhz667Ji0imW2r8iNzdbIEbjVB7mx4QKMB3EqqsS9HrgxcKSnoOpq64gK1sZooirFZfxqB9uZa7lCaCYJ8kkv_inInby04VRdTThCxE9QOvE/s1600/Zv5AePTrA4AMtJ53nf1t--1--vldou.jpg"
-  },
-  {
-    title: "Unlock Your Job Potential: Build a Resume That Gets You Noticed",
-    description: "Learn the basics of HTML, CSS, and JavaScript in this interactive workshop.",
-    date: new Date(2024, 4, 27), // May 27, 2024
-    rsvpLink: "https://example.com/rsvp/coding-workshop"
-  },
-  {
-    title: "Unlock Your Job Potential: Build a Resume That Gets You Noticed",
-    description: "Learn the basics of HTML, CSS, and JavaScript in this interactive workshop.",
-    date: new Date(2024, 4, 27), // May 27, 2024
-    rsvpLink: "https://example.com/rsvp/coding-workshop"
-  },
-  // {
-  //   title: "Unlock Your Job Potential: Build a Resume That Gets You Noticed",
-  //   description: "Learn the basics of HTML, CSS, and JavaScript in this interactive workshop.",
-  //   date: new Date(2024, 4, 27), // May 27, 2024
-  //   rsvpLink: "https://example.com/rsvp/coding-workshop"
-  // },
-];
+    {
+      title: "Create a Personalized Email Signature with HTML, CSS, and JavaScript",
+      description: "Join us for a screening of 'Casablanca' in the park. Bring your blankets and picnic baskets!",
+      date: new Date(2024, 2, 10), // March 10, 2024
+      rsvpLink: "https://example.com/rsvp/movie-night",
+      img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHG-NEvn5-XaIVLKT_WOeYSrafCulPM7JCt_f9flT5zZP4jMQCA9mOYcrMpuxM8rjgSMaBhz667Ji0imW2r8iNzdbIEbjVB7mx4QKMB3EqqsS9HrgxcKSnoOpq64gK1sZooirFZfxqB9uZa7lCaCYJ8kkv_inInby04VRdTThCxE9QOvE/s1600/Zv5AePTrA4AMtJ53nf1t--1--vldou.jpg"
+    },
+    {
+      title: "Unlock Your Job Potential: Build a Resume That Gets You Noticed",
+      description: "Learn the basics of HTML, CSS, and JavaScript in this interactive workshop.",
+      date: new Date(2024, 2, 21), // May 27, 2024
+      rsvpLink: "https://example.com/rsvp/coding-workshop"
+    },
+    {
+      title: "Land Your Dream Job: A Masterclass in Job Hunting Success",
+      description: "Learn the basics of HTML, CSS, and JavaScript in this interactive workshop.",
+      date: new Date(2024, 2, 28), // May 27, 2024
+      rsvpLink: "https://example.com/rsvp/coding-workshop"
+    },
+    {
+      title: "Beyond the Chat: Supercharge Your Productivity with ChatGPT",
+      description: "Learn the basics of HTML, CSS, and JavaScript in this interactive workshop.",
+      date: new Date(2024, 3, 6), // May 27, 2024
+      rsvpLink: "https://example.com/rsvp/coding-workshop"
+    },
+  ];
 
 addEventListener("DOMContentLoaded", (ev) => {
 
@@ -155,7 +155,45 @@ addEventListener("DOMContentLoaded", (ev) => {
     }
   }
 
+  // Create page number buttons
+  for (let i = 1; i <= numPages; i++) {
+    const button = document.createElement("button");
+    button.textContent = i;
+    button.addEventListener("click", () => {
+      let nextButton = document.getElementById("nextBtn")
+      if (currentPage < numPages && nextButton.style.visibility == "hidden"){
+        nextButton.style.visibility="visible"
+      }else{
+        nextButton.style.visibility="hidden"
+      }
+      currentPage = i;
+      displayPage(i);
+    });
+    eventsPagination.appendChild(button);
+  }
 
-  createPaginationButtons(); // Create initial pagination buttons
-
-});
+  // Create next arrow button (if needed)
+  if (currentPage < numPages) {
+    const nextButton = document.createElement("button");
+    nextButton.setAttribute("id", "nextBtn")
+    const backButton = document.createElement("button")
+    nextButton.textContent = ">"; // Or use an arrow icon
+    backButton.textContent = "<"
+    nextButton.addEventListener("click", () => {
+      currentPage++;
+      displayPage(currentPage, numPages);
+      if (currentPage >= numPages){
+        nextButton.style.visibility ="hidden"
+      }
+    });
+  
+    backButton.addEventListener("click", () => {
+      currentPage--;
+      displayPage(currentPage);
+      if (currentPage <= numPages[0]){
+        backButton.style.display ="none"
+      }
+    });
+    eventsPagination.appendChild(nextButton);
+  }
+})
