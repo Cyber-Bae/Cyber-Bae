@@ -4,7 +4,7 @@ const perkDic = [
   {
     img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVBiC1of0YoXcsjATc44vEND9abjCaQgtJ5RnA0FDf55yd-7GjSUMKn_5yqQiBtTub5LMVzK1rkjr76vEErhDP8QMXtf6Xc2k2JEmUpPap0lLtY2hRX6O4ZXIbmv-ktHy2heFrJoiTILkuus56-4MiAUE1NZdiRogFiiXk-nyFijIEM60/s1600/14.png",
     title: "Affordable Courses",
-    description: "We provide afordable cyber security courses to help you upskil for your next career pivit"
+    description: "We provide afordable cyber security courses to help you upskil for your next career pivot"
   },
   {
     img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiB_xHCZZkHCyhBiH0rIkPJJ3IvwLCKabLIXEAjnVJmFewBVC9VgKqG9KZUD6i2UDtZLN06zhRQC4Ic6B8B_UFNJ07PtfewHrgUxTHe3nl0AJUCYG-T4RCNDH3sjW-Jz2aAiGCg5SActMUQ6JMlUTeaJaX4_6vQgKwkp9xVRmwuIPKt_1k/s1600/13.png",
@@ -13,9 +13,9 @@ const perkDic = [
 
   },
   {
-    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPnFAcwz9xIRXwcGBg3GIy4LXsfUjQoWsNZVPMHK8PwDcz0ZwwX-FYRCDJaJFkfapo13c2LGn-57HIwnrh4q5gVjSWkHuBNh8_nCQgUD3N6Sxez01LeH6k4UI3JSiw-em7n1EeyTezWK4KEkR6329j1OqVfN1HQN0teYNAYFzX_DBleeY/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(3).png",
-    title: "???",
-    description: "We provide afordable cyber security courses to help you upskil for your next career pivit"
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghlHptcSdZ1lrVHG07nuPMy55SK8BHqsN7zvAc1B7MI4csYoG5iRhDQW-yehrOlbVNtFXG0BXffkiWZxYs_XdOn5Hc03cdOslh8Q9ZrG7dyqHL1x_pQRv9hdlEiUL5bWX2SvuHkeziK9TZfTD9wu0S55SRB3KzRW4qs3o1K55gkcvEB9c/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(8).png",
+    title: "Competitive Proposals",
+    description: "Gain early access to our database of high-paying competitive proposals."
   },
 ];
 
@@ -27,25 +27,28 @@ const eventDic = [
       description: "Join us for a screening of 'Casablanca' in the park. Bring your blankets and picnic baskets!",
       date: new Date(2024, 2, 10), // March 10, 2024
       rsvpLink: "https://example.com/rsvp/movie-night",
-      img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHG-NEvn5-XaIVLKT_WOeYSrafCulPM7JCt_f9flT5zZP4jMQCA9mOYcrMpuxM8rjgSMaBhz667Ji0imW2r8iNzdbIEbjVB7mx4QKMB3EqqsS9HrgxcKSnoOpq64gK1sZooirFZfxqB9uZa7lCaCYJ8kkv_inInby04VRdTThCxE9QOvE/s1600/Zv5AePTrA4AMtJ53nf1t--1--vldou.jpg"
+      img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE-OXdp-Aah1C_L5hKlk8KQHHSFHNHEZuoQEk9Rb5LEJncc0rgVXeX-AwLP0U7Zr79pIQdDShltnjWQghbojCb0ThjGFsv_J9CFsQc-KsqCQEmrSYf3g-FR0jMKjSrTWXykYIhrOuJNLQjYLK1yeBobKxyMnhZbRKjsaGmpvUX7xc3Xuk/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png"
     },
     {
       title: "Unlock Your Job Potential: Build a Resume That Gets You Noticed",
       description: "Learn the basics of HTML, CSS, and JavaScript in this interactive workshop.",
       date: new Date(2024, 2, 21), // May 27, 2024
-      rsvpLink: "https://example.com/rsvp/coding-workshop"
+      rsvpLink: "https://example.com/rsvp/coding-workshop",
+      img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE-OXdp-Aah1C_L5hKlk8KQHHSFHNHEZuoQEk9Rb5LEJncc0rgVXeX-AwLP0U7Zr79pIQdDShltnjWQghbojCb0ThjGFsv_J9CFsQc-KsqCQEmrSYf3g-FR0jMKjSrTWXykYIhrOuJNLQjYLK1yeBobKxyMnhZbRKjsaGmpvUX7xc3Xuk/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png"
     },
     {
       title: "Land Your Dream Job: A Masterclass in Job Hunting Success",
       description: "Learn the basics of HTML, CSS, and JavaScript in this interactive workshop.",
       date: new Date(2024, 2, 28), // May 27, 2024
-      rsvpLink: "https://example.com/rsvp/coding-workshop"
+      rsvpLink: "https://example.com/rsvp/coding-workshop",
+      img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE-OXdp-Aah1C_L5hKlk8KQHHSFHNHEZuoQEk9Rb5LEJncc0rgVXeX-AwLP0U7Zr79pIQdDShltnjWQghbojCb0ThjGFsv_J9CFsQc-KsqCQEmrSYf3g-FR0jMKjSrTWXykYIhrOuJNLQjYLK1yeBobKxyMnhZbRKjsaGmpvUX7xc3Xuk/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png"
     },
     {
       title: "Beyond the Chat: Supercharge Your Productivity with ChatGPT",
       description: "Learn the basics of HTML, CSS, and JavaScript in this interactive workshop.",
       date: new Date(2024, 3, 6), // May 27, 2024
-      rsvpLink: "https://example.com/rsvp/coding-workshop"
+      rsvpLink: "https://example.com/rsvp/coding-workshop",
+      img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE-OXdp-Aah1C_L5hKlk8KQHHSFHNHEZuoQEk9Rb5LEJncc0rgVXeX-AwLP0U7Zr79pIQdDShltnjWQghbojCb0ThjGFsv_J9CFsQc-KsqCQEmrSYf3g-FR0jMKjSrTWXykYIhrOuJNLQjYLK1yeBobKxyMnhZbRKjsaGmpvUX7xc3Xuk/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png"
     },
   ];
 
@@ -73,11 +76,8 @@ addEventListener("DOMContentLoaded", (ev) => {
   }
   getPerks();
 
-
-
   const eventsContainer = document.getElementById("event-cards");
   const eventsPagination = document.getElementById("events-pagination"); // Add a container for pagination buttons
-
   // Filter events to display only upcoming ones
   const upcomingEvents = eventDic.filter(event => event.date >= new Date());
 

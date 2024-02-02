@@ -39,7 +39,6 @@
   border-radius: 0.5rem
   box-sizing: border-box
   margin: 0px auto
-  margin-bottom: 10%
   img
     width: 80%
   .card
@@ -48,7 +47,7 @@
 body
   overflow-x: hidden
 .to_top
-  margin-bottom: 10% !important
+  margin-bottom: 2% 
 .bg-landing
   background-color: $haze
   color: var(--text)
@@ -64,8 +63,7 @@ body
     border-radius: 0.5rem
     box-sizing: border-box
     picture
-      width: 40%
-      margin-top: 5%
+      width: 50%
       margin-right: 2%
     .button
       height: 2%
@@ -122,11 +120,11 @@ body
   .right_header
     float: right
     width: 70%
-    left: 40%
+    left: 43%
     // left: 50%
     top: 3%
     position: absolute
-    z-index: -100
+    z-index: -90
 
   .tagline
     font-size: 250%
@@ -276,16 +274,35 @@ body
   padding: 1.5rem
   @media screen and (min-width: 1441px)
     padding: 1.5rem 0
-
+.grid-inverse 
+  margin-top: -5%
 .content
   padding-top: 5rem
   @include content
 
 .footer
   // border-top: 1px solid $xhaze
-  background: var(--footer-bg)
+  // background: var(--footer-bg)
   margin-top: 2rem
   font-size: 0.9rem
+  border-top: double
+  width: 85%
+  margin-top: 10% !important
+  margin: 0px auto
+  @media screen and (max-width: 629px)
+    width: 100%
+  .elements
+    display: flex
+    width: 100vw
+    @media screen and (max-width: 629px)
+      display: block
+      margin: 0px auto !important
+
+    div
+      width: 20%
+      @media screen and (max-width: 629px)
+        width: 100%
+        border-bottom: double
   &_inner
     @include content
     display: grid
@@ -335,7 +352,17 @@ body
     margin: 0.1rem 0 0.1rem 0.2rem
     font-size: 0.7rem
 
+.posts
+  display: flex
+  align-items: flex-start
+  @media screen and(max-width: 667px) 
+    display: block
+    
+  
+
 .post
+  .excerpt_thumbnail 
+    width: 30%
   &_link, &_title
     margin-bottom: 0
   &_link
@@ -365,6 +392,10 @@ body
     margin-bottom: 3rem
     border-radius: 0.5rem
     background: var(--post-bg)
+    width: 50%
+    margin-right: 5%
+    @media screen and (max-width: 667px)
+      width: 100%
   &_tag
     padding: 0.2rem 0.8rem
     font-size: 0.8rem
@@ -589,7 +620,6 @@ body
       border-radius: 0.5rem
   &_footer
     &.partition
-      display: grid
       @media screen and (min-width: $mobile-menu-breakpoint)
         grid-template-columns: 2fr 7fr
         grid-gap: 1rem
