@@ -1,6 +1,6 @@
 +++
 author = "Adriana Lamb"
-title = "The Benefits of Programming in 2024 (Dummy Article)"
+title = "The Benefits of Programming in 2024"
 date = "2024-01-13"
 description = "Sample article showcasing why programming is still beneficial in 2024."
 featured = true
@@ -15,11 +15,6 @@ series = ["Job Search Bootcamp"]
 aliases = ["job-search"]
 thumbnail = "images/dummy-article.png"
 +++
-
-Programming is a valuable skill that can be used in a variety of industries. In 2024, the demand for programmers is expected to continue to grow, making it a great time to start learning how to code.
-
-
-## Paragraph
 
 Programming is a valuable skill that can be used in a variety of industries. In 2024, the demand for programmers is expected to continue to grow, making it a great time to start learning how to code.
 

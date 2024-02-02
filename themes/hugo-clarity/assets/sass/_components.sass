@@ -7,6 +7,14 @@
   left: 1rem
 
 @media (max-width:629px)
+  #perks
+    display: block !important
+    width: 100%
+
+    .card
+      border-right: none !important
+      border-bottom: double !important
+
   #events-container
     margin: 0 auto !important
     width: 100% !important
@@ -21,6 +29,22 @@
     .event-description
       width: 100% !important
 
+#perks
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  // background-color: var(--table-bg)
+  width: 75%
+  border-radius: 0.5rem
+  box-sizing: border-box
+  margin: 0px auto
+  margin-bottom: 10%
+  img
+    width: 80%
+  .card
+    // margin: 3%  
+    border-right: double
 body
   overflow-x: hidden
 .bg-landing
@@ -48,7 +72,7 @@ body
     .event-description
       display: flex
       width: 75%
-      
+
     .date
       width: 5%
       margin-right: 5%
@@ -69,7 +93,6 @@ body
   @media (max-width:629px)
     margin-top: -20%
 
-
   // left: 40%
 .header
   top: 0
@@ -83,11 +106,11 @@ body
   text-align: left
   color: #fff
   padding: 10px
-  margin-bottom: 10%
+  margin-bottom: 3%
   @media (max-width:629px)
     .tagline
       font-size: 200%
-    
+
     .right_header
       width: 800px !important
   // .design
@@ -103,13 +126,9 @@ body
     position: absolute
     z-index: -100
 
-    
-
-
   .tagline
     font-size: 250%
     margin-bottom: 1rem
-  
 
     b
       color: var(--highlight)
