@@ -167,7 +167,9 @@ body
   text-align: left
   color: #fff
   padding: 10px
-  background-image: url("https://images.unsplash.com/photo-1521510186458-bbbda7aef46b?q=80&w=2962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+  background-repeat: no-repeat /* Prevents the background image from repeating */
+  background-size: cover /* Ensures the background image covers the entire container */
+  background-image: url("https://media.istockphoto.com/id/1480281297/photo/young-black-female-working-on-desktop-computer-in-creative-office-in-the-evening-happy.jpg?s=1024x1024&w=is&k=20&c=k0ufbeZ9zrkAZ4UEJaf_nffG8G30MZ777vsOWEOrsRQ=")
 
   @media (max-width:629px)
     .tagline
@@ -370,6 +372,8 @@ body
 
   .text
     margin-left: 3%
+  video
+    width: 50%
 .footer
   // border-top: 1px solid $xhaze
   // background: var(--footer-bg)
