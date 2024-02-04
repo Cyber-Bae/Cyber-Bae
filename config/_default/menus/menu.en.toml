@@ -11,7 +11,7 @@ weight = -110
 # Submenus are done this way: parent -> identifier
 [[main]]
 identifier = "Links"
-name = "Links"
+name = "Programs"
 weight = -108
 [[main]]
 name = "Bootcamps"
@@ -25,6 +25,11 @@ url = "#"
 [[main]]
 name = "About"
 url = "about/"
+weight = -107
+
+[[main]]
+name = "Blog"
+url = "blog/"
 weight = -107
 
 # social menu links

@@ -1,5 +1,24 @@
 //this is for the perks we provide
 
+const sponsorDic =[
+  {
+    img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPmavXPLTOp_qIq8V8IG2eYtnH7vvulKUTsVwqERS07UiqgmUwbUdD_TWVp96ekEu49otY6B9mBotGRZxzP3r3JOUqGBysQ_gRDiHIrDUr0AYyS8dy7jDPysdy3iLUzRUpuXpx9rXryxvsBtQdlKV87iY6PElBSALF0oShvHlqDJF9jEQ/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(3).png",
+    description:"include brief description of sponsor"
+  },
+  {
+    img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPmavXPLTOp_qIq8V8IG2eYtnH7vvulKUTsVwqERS07UiqgmUwbUdD_TWVp96ekEu49otY6B9mBotGRZxzP3r3JOUqGBysQ_gRDiHIrDUr0AYyS8dy7jDPysdy3iLUzRUpuXpx9rXryxvsBtQdlKV87iY6PElBSALF0oShvHlqDJF9jEQ/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(3).png",
+    description:"include brief description of sponsor"
+  },
+  {
+    img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPmavXPLTOp_qIq8V8IG2eYtnH7vvulKUTsVwqERS07UiqgmUwbUdD_TWVp96ekEu49otY6B9mBotGRZxzP3r3JOUqGBysQ_gRDiHIrDUr0AYyS8dy7jDPysdy3iLUzRUpuXpx9rXryxvsBtQdlKV87iY6PElBSALF0oShvHlqDJF9jEQ/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(3).png",
+    description:"include brief description of sponsor"
+  },
+  {
+    img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPmavXPLTOp_qIq8V8IG2eYtnH7vvulKUTsVwqERS07UiqgmUwbUdD_TWVp96ekEu49otY6B9mBotGRZxzP3r3JOUqGBysQ_gRDiHIrDUr0AYyS8dy7jDPysdy3iLUzRUpuXpx9rXryxvsBtQdlKV87iY6PElBSALF0oShvHlqDJF9jEQ/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(3).png",
+    description:"include brief description of sponsor"
+  },
+]
+
 const perkDic = [
   {
     img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVBiC1of0YoXcsjATc44vEND9abjCaQgtJ5RnA0FDf55yd-7GjSUMKn_5yqQiBtTub5LMVzK1rkjr76vEErhDP8QMXtf6Xc2k2JEmUpPap0lLtY2hRX6O4ZXIbmv-ktHy2heFrJoiTILkuus56-4MiAUE1NZdiRogFiiXk-nyFijIEM60/s1600/14.png",
@@ -23,22 +42,15 @@ const perkDic = [
 // this is for the events
 const eventDic = [
     {
-      title: "Create a Personalized Email Signature with HTML, CSS, and JavaScript",
-      description: "Join us for a screening of 'Casablanca' in the park. Bring your blankets and picnic baskets!",
-      date: new Date(2024, 2, 10), // March 10, 2024
-      rsvpLink: "https://example.com/rsvp/movie-night",
-      img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE-OXdp-Aah1C_L5hKlk8KQHHSFHNHEZuoQEk9Rb5LEJncc0rgVXeX-AwLP0U7Zr79pIQdDShltnjWQghbojCb0ThjGFsv_J9CFsQc-KsqCQEmrSYf3g-FR0jMKjSrTWXykYIhrOuJNLQjYLK1yeBobKxyMnhZbRKjsaGmpvUX7xc3Xuk/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png"
-    },
-    {
       title: "Unlock Your Job Potential: Build a Resume That Gets You Noticed",
-      description: "Learn the basics of HTML, CSS, and JavaScript in this interactive workshop.",
+      description: "Tired of resumes that blend into the pile? This workshop equips you with the tools to build a resume that grabs attention and lands interviews.",
       date: new Date(2024, 2, 21), // May 27, 2024
       rsvpLink: "https://example.com/rsvp/coding-workshop",
       img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE-OXdp-Aah1C_L5hKlk8KQHHSFHNHEZuoQEk9Rb5LEJncc0rgVXeX-AwLP0U7Zr79pIQdDShltnjWQghbojCb0ThjGFsv_J9CFsQc-KsqCQEmrSYf3g-FR0jMKjSrTWXykYIhrOuJNLQjYLK1yeBobKxyMnhZbRKjsaGmpvUX7xc3Xuk/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png"
     },
     {
       title: "Land Your Dream Job: A Masterclass in Job Hunting Success",
-      description: "Learn the basics of HTML, CSS, and JavaScript in this interactive workshop.",
+      description: "This immersive masterclass equips you with the winning strategies to navigate the modern job market and land the role you deserve.",
       date: new Date(2024, 2, 28), // May 27, 2024
       rsvpLink: "https://example.com/rsvp/coding-workshop",
       img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE-OXdp-Aah1C_L5hKlk8KQHHSFHNHEZuoQEk9Rb5LEJncc0rgVXeX-AwLP0U7Zr79pIQdDShltnjWQghbojCb0ThjGFsv_J9CFsQc-KsqCQEmrSYf3g-FR0jMKjSrTWXykYIhrOuJNLQjYLK1yeBobKxyMnhZbRKjsaGmpvUX7xc3Xuk/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png"
@@ -53,6 +65,26 @@ const eventDic = [
   ];
 
 addEventListener("DOMContentLoaded", (ev) => {
+
+  const sponsorContainer = document.getElementById("sponsor_list")
+  function getSponsors(){
+    if (sponsorContainer != null){
+      sponsorDic.forEach((event)=>{
+        const sponsorElement = document.createElement("div")
+        sponsorElement.classList.add("sponsor")
+        sponsorElement.innerHTML=`
+          <img src="${event.img}">
+          <p>${event.description}</p>
+        `
+
+        sponsorContainer.appendChild(sponsorElement)
+        
+      })
+    }
+  }
+  getSponsors()
+
+  //perks
 
   const perkContainer = document.getElementById("perks")
 
@@ -103,7 +135,10 @@ addEventListener("DOMContentLoaded", (ev) => {
       <div class="date"><h3>${monthAbbr}</h3><h1>${event.date.getDate()}</h1></div>
       <div class="event-description">
         <picture><img loading="lazy" src=${event.img}></picture>
-        <h3 class="post_link"><a href="#">${event.title}</a></h3>
+        <div class="text">
+          <h4 class="post_link"><a href="#">${event.title}</a></h4>
+          <p>${event.description}</p>
+        </div>
       </div>
       <a href="${event.rsvpLink}" class="button ">RSVP</a>
     `;

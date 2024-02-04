@@ -4,6 +4,12 @@ const inline = ":inline";
 // variables read from your hugo configuration
 let showImagePosition = "{{ .Site.Params.figurePositionShow }}";
 
+
+
+// val.forEach((value)=>{
+//   console.log(value)
+// })
+
 const showImagePositionLabel = '{{ .Site.Params.figurePositionLabel }}';
 
 function isObj(obj) {

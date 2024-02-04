@@ -13,7 +13,7 @@ categories = [
 ]
 series = ["Job Search Bootcamp"]
 aliases = ["job-search"]
-thumbnail = "images/dummy-article.png"
+thumbnail = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6OLnXMtIF7_zHO3cyUzy87XLIjnxPp5mPv2Zah1aGPrHq9iclqyjV1qTh4tUGai8lYUqyfRdEagokJwL2GU0Uu3BL0nwn9daMWK8xIkS836URh0-n4CW8bptZA4-ZMA_IwsSdPsPd1SGxpJmIok8Tohgjt9nmxBLxQoIMqo6RhVkz28w/s1600/Is%20it%20Worth%20Becoming%20a%20Web%20Developer%20in%202024%20.png"
 +++
 
 Programming is a valuable skill that can be used in a variety of industries. In 2024, the demand for programmers is expected to continue to grow, making it a great time to start learning how to code.
