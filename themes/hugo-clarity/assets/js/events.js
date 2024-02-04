@@ -2,19 +2,19 @@
 
 const sponsorDic =[
   {
-    img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPmavXPLTOp_qIq8V8IG2eYtnH7vvulKUTsVwqERS07UiqgmUwbUdD_TWVp96ekEu49otY6B9mBotGRZxzP3r3JOUqGBysQ_gRDiHIrDUr0AYyS8dy7jDPysdy3iLUzRUpuXpx9rXryxvsBtQdlKV87iY6PElBSALF0oShvHlqDJF9jEQ/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(3).png",
+    img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdx6EmC9LY7F79bzXBLekYqW_GmRD1Yk3tA5yg0WWM6D771Bh-8j41dYeU3T5eNtuxSWgmbTpUNhyc6EvvcwZvDtLmtAzrfNstElwY14hMHhV00irhLRNwkIuZ3_-YNv7eoeftzV-cdTRgmoLI4tCFJUFjHYOU7VWEfWtf9rAZFNRf2Yo/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png",
     description:"include brief description of sponsor"
   },
   {
-    img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPmavXPLTOp_qIq8V8IG2eYtnH7vvulKUTsVwqERS07UiqgmUwbUdD_TWVp96ekEu49otY6B9mBotGRZxzP3r3JOUqGBysQ_gRDiHIrDUr0AYyS8dy7jDPysdy3iLUzRUpuXpx9rXryxvsBtQdlKV87iY6PElBSALF0oShvHlqDJF9jEQ/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(3).png",
+    img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdx6EmC9LY7F79bzXBLekYqW_GmRD1Yk3tA5yg0WWM6D771Bh-8j41dYeU3T5eNtuxSWgmbTpUNhyc6EvvcwZvDtLmtAzrfNstElwY14hMHhV00irhLRNwkIuZ3_-YNv7eoeftzV-cdTRgmoLI4tCFJUFjHYOU7VWEfWtf9rAZFNRf2Yo/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png",
     description:"include brief description of sponsor"
   },
   {
-    img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPmavXPLTOp_qIq8V8IG2eYtnH7vvulKUTsVwqERS07UiqgmUwbUdD_TWVp96ekEu49otY6B9mBotGRZxzP3r3JOUqGBysQ_gRDiHIrDUr0AYyS8dy7jDPysdy3iLUzRUpuXpx9rXryxvsBtQdlKV87iY6PElBSALF0oShvHlqDJF9jEQ/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(3).png",
+    img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdx6EmC9LY7F79bzXBLekYqW_GmRD1Yk3tA5yg0WWM6D771Bh-8j41dYeU3T5eNtuxSWgmbTpUNhyc6EvvcwZvDtLmtAzrfNstElwY14hMHhV00irhLRNwkIuZ3_-YNv7eoeftzV-cdTRgmoLI4tCFJUFjHYOU7VWEfWtf9rAZFNRf2Yo/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png",
     description:"include brief description of sponsor"
   },
   {
-    img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPmavXPLTOp_qIq8V8IG2eYtnH7vvulKUTsVwqERS07UiqgmUwbUdD_TWVp96ekEu49otY6B9mBotGRZxzP3r3JOUqGBysQ_gRDiHIrDUr0AYyS8dy7jDPysdy3iLUzRUpuXpx9rXryxvsBtQdlKV87iY6PElBSALF0oShvHlqDJF9jEQ/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(3).png",
+    img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdx6EmC9LY7F79bzXBLekYqW_GmRD1Yk3tA5yg0WWM6D771Bh-8j41dYeU3T5eNtuxSWgmbTpUNhyc6EvvcwZvDtLmtAzrfNstElwY14hMHhV00irhLRNwkIuZ3_-YNv7eoeftzV-cdTRgmoLI4tCFJUFjHYOU7VWEfWtf9rAZFNRf2Yo/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png",
     description:"include brief description of sponsor"
   },
 ]

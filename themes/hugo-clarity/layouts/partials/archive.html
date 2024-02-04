@@ -10,32 +10,69 @@
 {{ $pages = $featuredPosts | append $normalPosts }}
 {{ end }}
 
+{{ $imagesPath := printf "../%s" (default "images/" .Site.Params.imagesDir) }}
+
+
+
 
 
 <header class="header">
+
   <h1 class="tagline">Tech with Heart. Code with Purpose. <b>Join the Movement.</b></h1>
   <a href="#" class="button">Become a Changemaker</a>
-  <img class="left_header design" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3qdE6vDEwC6Pb29oS7ymIxbLq7y7hWJFFchHaBM5nBTOQXm0lEwrDpMG-FVr5D6T-BT99C_w9YmBlSftjb4cHkFoqKxGRaR5RI1uCnxwtsFrkZ-e7wb5In9tNo6qqV529gpB5NfkDeoW49m5bJeANE8vMmiX_JTtkUf4VuDoluwO9jL0/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(1).png">
+  <img class="left_header design"
+    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3qdE6vDEwC6Pb29oS7ymIxbLq7y7hWJFFchHaBM5nBTOQXm0lEwrDpMG-FVr5D6T-BT99C_w9YmBlSftjb4cHkFoqKxGRaR5RI1uCnxwtsFrkZ-e7wb5In9tNo6qqV529gpB5NfkDeoW49m5bJeANE8vMmiX_JTtkUf4VuDoluwO9jL0/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(1).png">
 </header>
 
-<div class="purpose">
+<div class="intro_video">
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/mmKguZohAck?si=8MrAzOr6PWf6OeMK"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
   <div class="text">
-  <!-- <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibsvMmIxZ8pPkqv_Ih03p0P8NqE2PnyCv0H7b7X4u9i_AH9gxeyHWAHkSgsBlSu4L5XG-T4kvLkQKjZ5Y-WI-yRQE0MEt5A1rCUaJPiispn7h-_3lvA_g2KEiTm2KD3pM8PGNBhL-rWCrG4oDxbo2bxp3SuCtGTvnNUhnC4QlyAhZRppU/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(6).png"> -->
-  <h3><a>Level Up Tech: Women's Collaborative Network </a></h3>
-  <p>The Cyber Bae community empowers and celebrates women at all stages of their tech careers, from aspiring professionals to seasoned executives. Our mission is to build a strong, inclusive community, provide opportunities for personal growth, and inspire more women to enter the world of technology. Join us on our journey to success!
-  </p>
+    <h3>🔐 Why Choose Our Course?</h3>
+    <ul>
+      <li>Expert-Led Training: Learn from industry professionals with hands-on experience.</li>
+      <li>Real-world Scenarios: Tackle practical challenges to enhance your problem-solving skills.</li>
+      <li>Certification Ready: Gain globally recognized certifications upon course completion.</li>
+      <li>Interactive Learning: Engage in dynamic discussions and collaborate with peers.</li>
+    </ul>
+    <a href="#" class="button">Sign Up Now</a>
+
+
   </div>
+
+
+
 </div>
+
+
 
 <div id="perks">
 </div>
+<br>
 
-<img class="accent_img_left" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN0shckVZaOfkZ1afw_dbcCzuQDx0zR_L-_x7jHLddHVj3DrcIBaOpE83DbUTT-NU_MzWfgiNCOFdL07_7rP9tRhkFUvcS1_j5zXmtOb34C7tIW4kPgjKS_bwZ6zqkS4uSDV-TZnfFmgw7mc-z6tnana0K913s58fSPBpCWSRi1Uvi5m8/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(2).png">
+<img class="accent_img_left"
+  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN0shckVZaOfkZ1afw_dbcCzuQDx0zR_L-_x7jHLddHVj3DrcIBaOpE83DbUTT-NU_MzWfgiNCOFdL07_7rP9tRhkFUvcS1_j5zXmtOb34C7tIW4kPgjKS_bwZ6zqkS4uSDV-TZnfFmgw7mc-z6tnana0K913s58fSPBpCWSRi1Uvi5m8/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(2).png">
+
+<div class="purpose">
+  <div class="text">
+    <!-- <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibsvMmIxZ8pPkqv_Ih03p0P8NqE2PnyCv0H7b7X4u9i_AH9gxeyHWAHkSgsBlSu4L5XG-T4kvLkQKjZ5Y-WI-yRQE0MEt5A1rCUaJPiispn7h-_3lvA_g2KEiTm2KD3pM8PGNBhL-rWCrG4oDxbo2bxp3SuCtGTvnNUhnC4QlyAhZRppU/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(6).png"> -->
+    <h3 class="highlight"><a>Level Up Tech: Women's Collaborative Network </a></h3>
+    <p>The Cyber Bae community empowers and celebrates women at all stages of their tech careers, from aspiring
+      professionals to seasoned executives. Our mission is to build a strong, inclusive community, provide opportunities
+      for personal growth, and inspire more women to enter the world of technology. Join us on our journey to success!
+    </p>
+  </div>
+</div>
+
 
 <div id="events-container">
 
   <h1>Upcoming Events</h1>
-  <img class="right_header"src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuEHV6xmiEDABHreYoR0bkE-g_nrBBIyi0zKLNC83Ha3U_4Dlfi1ha_QlP1txnTXsoujVHj25MnzSZs7fXahDMhsMnwxBu9OLS8_1dSPChC4NYtNAEBiuzF3jCV6V0j5xWga82wkqyf75MWJyvOGns3E1EixQILuO8fauxzeAs7R5ebQ/s1600/Game%20Developer%20Resume%20Website%20in%20Black%20and%20White%20Simple%20and%20Minimal%20Style%20(2).png">
+  <img class="right_header"
+    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuEHV6xmiEDABHreYoR0bkE-g_nrBBIyi0zKLNC83Ha3U_4Dlfi1ha_QlP1txnTXsoujVHj25MnzSZs7fXahDMhsMnwxBu9OLS8_1dSPChC4NYtNAEBiuzF3jCV6V0j5xWga82wkqyf75MWJyvOGns3E1EixQILuO8fauxzeAs7R5ebQ/s1600/Game%20Developer%20Resume%20Website%20in%20Black%20and%20White%20Simple%20and%20Minimal%20Style%20(2).png">
 
 
   <div id="event-cards"></div>
@@ -43,11 +80,34 @@
 </div>
 
 
+<div id="membership">
+
+  <div class="container">
+
+  </div>
+  <div class="text">
+    <h3>Cyber Bae is a Global Network</h3>
+    <h6 class="highlight"> The Cyber Bae Network is an esteemed community created for both established and aspiring
+      women in the field of technology.
+    </h6>
+    <p>Welcome to our thriving community of passionate freelancers, creative entrepreneurs, and savvy contractors from
+      every corner of the globe. Together, we join forces to break barriers and build a global network of innovation and
+      collaboration. Our diverse talents and perspectives ignite a powerful force for positive change and endless
+      possibilities. Join us on this journey towards limitless potential and undeniable success.
+
+
+    </p>
+    <a href="#" class="button">Explore Membership</a>
+  </div>
+
+</div>
+
+
 <div class="sponsors">
   <h3>Cyber Bae is Powered By</h3>
-  <div id="sponsor_list"></div>
+  <div id="sponsor_list">
 
-
+  </div>
 </div>
 
 <!-- <div class="grid-inverse wrap content">

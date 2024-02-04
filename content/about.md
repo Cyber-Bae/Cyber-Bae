@@ -48,3 +48,6 @@ Whether you're a complete beginner or a seasoned professional looking to expand 
 Together, we can unlock the boundless potential of diverse minds and shape a brighter, more secure digital world for all.
 
 Ready to make a difference? Visit our website today to learn more about our programs and how you can get involved!
+
+
+{{< video autoplay="true" loop="true" src="https://www.canva.com/design/DAF71ZVVW5c/cuJrcuJy8tIJ80EJtKnRVA/watch?utm_content=DAF71ZVVW5c&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel" >}}

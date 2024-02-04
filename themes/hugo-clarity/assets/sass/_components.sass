@@ -28,12 +28,49 @@
       width: 100%
     .event-description
       width: 100% !important
+#membership
+  width: 100%
+  height: auto
+  display: flex
+  background: var(--table-bg)
+  padding: 0
+  margin-top: 10%
+  overflow: hidden
+  .container
+    width: 45%
+    margin-right: 3%
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimp4HIwoRRL_puA-XHe1av2DaWNTMffadKMlTfEkFy-c3P-WY77CJI2skeP7aI4-FkaVmFKcfOSpf3LoaugjVLDbZdWQqUyo9ECX83-UERKVOVebLxMgk4QBdVfynwjn0xuNFqvDLY7F9ZXK2Cj60UkBD1-XRldXPBpgmgrVz-EYTr6cs/s1600/Blue%20Green%20and%20White%20Modern%20Tech%20Article%20Facebook%20Post%20(1).png")
+    object-fit: cover
+    @media screen and (max-width: 695px)
+      width: fit-content
 
+  
+  @media screen and (max-width: 695px)
+    display: block
+  .text
+    width: 45%
+    object-fit: cover
+    margin-top: 5%
+    margin-right: 3%
+    margin-bottom: 5%
+    @media screen and (max-width: 695px)
+      width: 90%
+      margin: 0px auto
+      padding-bottom: 5%
+
+
+ 
+    
+    
+.highlight
+  color: #00AA99
+  font-weight: bolder
 #perks
   display: flex
   align-items: center
   justify-content: center
   text-align: center
+  margin-bottom: 3%
   // background-color: var(--table-bg)
   width: 75%
   border-radius: 0.5rem
@@ -115,8 +152,9 @@ body
     display: block
 
   .sponsor
+    margin-right: 5%
     img
-      width: 50%
+      width: 100%
 .header
   top: 0
   left: 0
@@ -129,6 +167,8 @@ body
   text-align: left
   color: #fff
   padding: 10px
+  background-image: url("https://images.unsplash.com/photo-1521510186458-bbbda7aef46b?q=80&w=2962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+
   @media (max-width:629px)
     .tagline
       font-size: 200%
@@ -266,7 +306,7 @@ body
 
   &_brand
     img
-      max-width: 20vw
+      max-width: 15vw
       margin: 0
     @media screen and (min-width: $mobile-menu-breakpoint)
       padding-left: 0
@@ -302,6 +342,7 @@ body
   padding-top: 5rem
   @include content
 .purpose
+  margin-top: 5%
   padding: 10px
   text-align: center
   background-color: var(--table-bg)
@@ -318,6 +359,17 @@ body
     // width: 70%
     margin: 0px auto
 
+.intro_video
+  display: flex
+  background-color: var(--table-bg)
+  margin-bottom: 3%
+  @media screen and (max-width: 629px)
+    display: block
+    .text
+      padding-block: 5%
+
+  .text
+    margin-left: 3%
 .footer
   // border-top: 1px solid $xhaze
   // background: var(--footer-bg)
@@ -327,6 +379,10 @@ body
   width: 85%
   margin-top: 10% !important
   margin: 0px auto
+  .search
+    width: 100% !important
+    @media screen and (max-width: 629px)
+      border-bottom: none
   @media screen and (max-width: 629px)
     width: 100%
   .elements

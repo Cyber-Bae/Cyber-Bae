@@ -5,8 +5,9 @@
 {{- $scratch := newScratch }}
 {{- $scratch.Set "writeSeparator" false }}
 {{- if $showPostMeta }}
-
-<p> Written By: {{ .Params.author }}</p>
+{{- if ne .Params.Title "About"}}
+  <p> Written By: <a>{{ .Params.author }}</a></p>
+{{ end }}
   <div class="post_meta">
 {{- end }}
   {{- if $showDate }}
