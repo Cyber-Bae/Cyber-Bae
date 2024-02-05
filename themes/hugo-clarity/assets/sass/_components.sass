@@ -6,6 +6,9 @@
   top: -0.5rem
   left: 1rem
 
+  h1, h2, h3, h4, h5, h6
+    opacity: 0.8
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
 @media (max-width:629px)
   #perks
     display: block !important
@@ -20,6 +23,7 @@
     width: 100% !important
     .event-card
       display: block !important
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
     .date
       margin-right: 10%
       line-height: 1
@@ -29,6 +33,7 @@
     .event-description
       width: 100% !important
 #membership
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
   width: 100%
   height: auto
   display: flex
@@ -61,10 +66,13 @@
 
  
     
-    
+.button
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)    
 .highlight
-  color: #00AA99
-  font-weight: bolder
+  color: #1c7168
+  font-weight: bold
+  opacity: 0.8
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
 #perks
   display: flex
   align-items: center
@@ -140,6 +148,7 @@ body
   margin-top: -10%
   @media (max-width:629px)
     margin-top: -20%
+.li
 
 .sponsors
   margin-top: 5%
@@ -345,6 +354,7 @@ body
   padding-top: 5rem
   @include content
 .purpose
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
   margin-top: 5%
   padding: 10px
   text-align: center
@@ -366,6 +376,7 @@ body
   display: flex
   background-color: var(--table-bg)
   margin-bottom: 3%
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
   @media screen and (max-width: 629px)
     display: block
     .text
@@ -375,6 +386,8 @@ body
 
   .text
     margin-left: 3%
+  .button
+    margin-top: 4%
   video
     width: 50%
     @media screen and (max-width: 629px)
