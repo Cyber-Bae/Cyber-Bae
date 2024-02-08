@@ -23,7 +23,7 @@
     {{- partial "head" . }}
     {{- partial "hooks/head-end" . }}
   </head>
-  <body style="overflow: hidden !important;"
+  <body style="overflow-x: hidden !important; width: 100% !important; position: fixed;"
     data-code="{{ $codeBlockConfig.max }}"
     data-lines="{{ $codeBlockConfig.lines }}"
     id="documentTop"
