@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6
       width: 90%
       margin: 0px auto
 body
-  overflow-x: auto
+  overflow-x: hidden
 .to_top
   margin-bottom: 2%
 .bg-landing
@@ -373,7 +373,7 @@ body
   &_open + &_sub
     height: initial
     z-index: 999
-    overflow: initial
+    overflow: hidden
     border-radius: 0.5rem
     padding-bottom: 0.5rem
     @media screen and (min-width: $mobile-menu-breakpoint)
@@ -628,7 +628,7 @@ body
         top: 0
         left: 0
         height: 100vh
-        overflow-y: auto
+        overflow-y: hidden
         width: 100vw
         padding: 5rem 1.5rem
         background: var(--translucent-light)
@@ -681,7 +681,7 @@ body
   display: grid
   width: 100%
   max-width: 100%
-  overflow-x: auto
+  overflow-x: hidden
 
 .to-top
   position: fixed
@@ -1007,7 +1007,7 @@ figcaption
     background-color: var(--bg)
     display: grid
     align-items: center
-    overflow: auto
+    overflow: hidden
   &-scale &-scalable
     background-color: var(--text)
   &-scalable
@@ -1021,7 +1021,7 @@ figcaption
     margin: 0
 
 .video
-  overflow: auto
+  // overflow: auto
   padding-bottom: 56.25%
   position: relative
   height: 0
