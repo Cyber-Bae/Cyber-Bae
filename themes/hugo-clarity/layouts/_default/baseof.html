@@ -23,7 +23,7 @@
     {{- partial "head" . }}
     {{- partial "hooks/head-end" . }}
   </head>
-  <body style=" overflow-x: hidden !important; position: absolute !important; width: 100% !important;"
+  <body style="  overscroll-behavior: contain !important; position: static !important; width: 100% !important;"
     data-code="{{ $codeBlockConfig.max }}"
     data-lines="{{ $codeBlockConfig.lines }}"
     id="documentTop"
