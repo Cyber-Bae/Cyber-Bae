@@ -1,7 +1,7 @@
 {{- $params := .Site.Params }}
 {{- $centerLogo := $params.centerLogo }}
 {{ $logo := $params.logo }}
-<header class="nav_header" >
+<header class="nav_header" style="max-width: 100vw;" >
   <nav class="nav">
     {{- if $centerLogo }}
       {{- partialCached "logo" (dict "logo" $logo "class" "nav_hide") }}
