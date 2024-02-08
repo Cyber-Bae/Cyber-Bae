@@ -6,6 +6,10 @@
   top: -0.5rem
   left: 1rem
 
+.table
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.9)
+
+
 .ceo
   text-align: center
   margin-bottom: 5%
@@ -26,12 +30,14 @@
 
   img
     border-radius: 50%
-    width: 280px
-    height: 250px
+    width: 15%
+    height: 15%
     shape-outside: circle()
     margin-left: 20%
     @media (max-width:629px)
       margin: 0px auto
+      width: 30%
+      height: 30%
 
 
 
@@ -52,7 +58,7 @@ h1, h2, h3, h4, h5, h6
     width: 100% !important
     .event-card
       display: block !important
-       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9)
     .date
       margin-right: 10%
       line-height: 1
@@ -96,7 +102,7 @@ h1, h2, h3, h4, h5, h6
  
     
 .button
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)    
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6)    
 .highlight
   color: var(--highlight)
   font-weight: bold
@@ -114,10 +120,17 @@ h1, h2, h3, h4, h5, h6
   box-sizing: border-box
   margin: 0px auto
   img
-    width: 80%
+    width: 60%
   .card
     // margin: 3%  
     border-right: double
+    text-align: center
+    justify-content: center
+    align-items: center
+    // height: 60vh
+    p
+      width: 90%
+      margin: 0px auto
 body
   overflow-x: hidden
 .to_top
@@ -130,11 +143,11 @@ body
   margin-left: 2%
   button
     bottom: 100%
-  .right_header
-    width: 55%
-    float: left
+  .images
+    width: 50%
+    // float: left
     position: absolute
-    left: 60%
+    left: 65%
     z-index: -99
     @media screen and(max-width: 629px)
       display: none
@@ -164,7 +177,7 @@ body
       margin-left: 2%
       h3
         margin-bottom: -50%
-.left_header
+.image
   width: 100%
   position: absolute
   z-index: -100
@@ -193,50 +206,77 @@ body
     margin-right: 5%
     img
       width: 100%
+
 .header
-  // video
-  //   width: 100vw
-  //   height: 100vh
   top: 0
   left: 0
   width: 100%
-  height: 80vh
-  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbUhVfEo2c9YYOaoGyBDXvkSLvz6TlFH8c9jL8Dp5Da68aJpET6_sZLgZl6kCug23iVWtvIDuOBOD6Su2r7Kt1sgkzgY2nrFUnGVVha2EwV-E18FBql2iZeipeOSOAZC6wQzaJEjPWfgyCyBx9M6NqTepbhBKGNf-r90ww_OaR9p_JVdk/s1600/Simple%20White%20Modern%20Landing%20Page%20UI%20Desktop%20Prototype%20(1).png")
-  @media (max-width:629px)
-    height: auto
+  height: 100vh
+  background-size: cover
+  background-image: url(./images/globe.png)
+  // background: linear-gradient(to bottom, var(--choice-bg), black ), url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS0yhXSy-rfJcsovaajeQYN5oAWCAXCpQT3LnL1MmPEb31_690BOkcc1k0AFZqOKxHq_vO5ioRqjZQA43h13R6y9aFW1pS7AyUTHBmt4OgE_GciWI8tcUp7OuxiYhihOYoh7PD6aYmc4_wBkr66kBIX4vmLrhvxgMTiMpVeEkf0X_aEcE/s1600/9.png")
+
+  background-position: center
+  background-repeat: no-repeat
   display: flex
   flex-direction: column
   align-items: center
   justify-content: center
   text-align: left
+  @media (max-width:629px)
+    height: fit-content !important
+  
   // color: #fff
+
+
   padding: 10px
   margin-top: 5%
-  border-radius: 
+  p
+    color: white
   .elements
     display: flex
-    box-shadow: 0 1rem 3rem rgba(0,0,0,0.25)
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.9)
     width: 75%
+    height: fit-content
     margin: 0px auto
-    background-color: var(--table-bg)
-    padding: 20px
     border-radius: 0.5rem
+    background: linear-gradient(to bottom, var(--choice-bg), black )
+
+
+    .text
+      margin-left: 5%
+      width: 65%
+      margin-bottom: 5%
+   
     
     @media (max-width:629px)
       width: 100%
       display: block
+      margin-top: 10% !important
       
       .text
-        width: 100%
+        width: 100% !important
+        position: static !important
+        margin: 0px auto !important
+        text-align: center !important
       img
         display: none        
     .text
+      margin-left: 10%
       width: 70%
-      @media (max-width:629px)
-        width: 100%
+      position: relative
+     
+    
 
     img
-      width: 40%
+      width: 50%
+      height: auto
+      shape-outside: circle()
+      left: 15%
+      position: relative
+      top: 3.5%
+      margin-left: -18%
+      // margin-left: 30%
 
   // background-repeat: no-repeat /* Prevents the background image from repeating */
   // background-size: cover /* Ensures the background image covers the entire container */
@@ -403,8 +443,7 @@ body
   padding-top: 5rem
   @include content
 .purpose
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
-  margin-top: 5%
+  margin-top: 6%
   padding: 10px
   text-align: center
   background-color: var(--table-bg)

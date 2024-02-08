@@ -23,18 +23,18 @@ const perkDic = [
   {
     img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVBiC1of0YoXcsjATc44vEND9abjCaQgtJ5RnA0FDf55yd-7GjSUMKn_5yqQiBtTub5LMVzK1rkjr76vEErhDP8QMXtf6Xc2k2JEmUpPap0lLtY2hRX6O4ZXIbmv-ktHy2heFrJoiTILkuus56-4MiAUE1NZdiRogFiiXk-nyFijIEM60/s1600/14.png",
     title: "Affordable Courses",
-    description: "We provide afordable cyber security courses to help you upskil for your next career pivot"
+    description: "Our budget-friendly cyber security courses are designed to assist you in enhancing your skill set for future career changes"
   },
   {
     img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiB_xHCZZkHCyhBiH0rIkPJJ3IvwLCKabLIXEAjnVJmFewBVC9VgKqG9KZUD6i2UDtZLN06zhRQC4Ic6B8B_UFNJ07PtfewHrgUxTHe3nl0AJUCYG-T4RCNDH3sjW-Jz2aAiGCg5SActMUQ6JMlUTeaJaX4_6vQgKwkp9xVRmwuIPKt_1k/s1600/13.png",
     title: "Dedicated Network",
-    description: "We're more than an organization. We're a community of motivated professions here to help you advance your career"
+    description: "We are not just a mere organization. We are a community of dedicated individuals, united in our goal to assist you in propelling your career forward"
 
   },
   {
     img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghlHptcSdZ1lrVHG07nuPMy55SK8BHqsN7zvAc1B7MI4csYoG5iRhDQW-yehrOlbVNtFXG0BXffkiWZxYs_XdOn5Hc03cdOslh8Q9ZrG7dyqHL1x_pQRv9hdlEiUL5bWX2SvuHkeziK9TZfTD9wu0S55SRB3KzRW4qs3o1K55gkcvEB9c/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(8).png",
     title: "Competitive Proposals",
-    description: "Gain early access to our database of high-paying competitive proposals."
+    description: "Get a head start with our exclusive database of top-paying competitive offers."
   },
 ];
 
@@ -126,6 +126,7 @@ addEventListener("DOMContentLoaded", (ev) => {
     upcomingEvents.slice(startIndex, endIndex).forEach(event => {
       const eventCard = document.createElement("div");
       eventCard.classList.add("event-card");
+      eventCard.classList.add("table")
       const options = { month: "short" }; // Use "short" for 3-letter abbreviations
       const monthAbbr = event.date.toLocaleDateString("en-US", options).slice(0, 3);
 
