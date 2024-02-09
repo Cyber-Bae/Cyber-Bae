@@ -23,12 +23,13 @@
 </script>
 
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
 
     {{- partial "head" . }}
     {{- partial "hooks/head-end" . }}
   </head>
-  <body style=""
+  <body 
     data-code="{{ $codeBlockConfig.max }}"
     data-lines="{{ $codeBlockConfig.lines }}"
     id="documentTop"
