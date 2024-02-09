@@ -102,11 +102,11 @@
 <div class="purpose table" style="overflow: hidden !important">
   <div class="text">
     <!-- <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibsvMmIxZ8pPkqv_Ih03p0P8NqE2PnyCv0H7b7X4u9i_AH9gxeyHWAHkSgsBlSu4L5XG-T4kvLkQKjZ5Y-WI-yRQE0MEt5A1rCUaJPiispn7h-_3lvA_g2KEiTm2KD3pM8PGNBhL-rWCrG4oDxbo2bxp3SuCtGTvnNUhnC4QlyAhZRppU/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(6).png"> -->
-    <h3 class="highlight"><a>Level Up Tech: Women's Collaborative Network </a></h3>
-    <p>The Cyber Bae community empowers and celebrates women at all stages of their tech careers, from aspiring
+    <h1 class="highlight"><a>Level Up Tech: Women's Collaborative Network </a></h1>
+    <h4>The Cyber Bae community empowers and celebrates women at all stages of their tech careers, from aspiring
       professionals to seasoned executives. Our mission is to build a strong, inclusive community, provide opportunities
       for personal growth, and inspire more women to enter the world of technology. Join us on our journey to success!
-    </p>
+    </h4>
   </div>
 </div>
 
@@ -135,7 +135,23 @@
   <div id="event-cards"></div>
   <div id="events-pagination"></div>
 </div>
+<div id="feature_div">
+  {{- $s := .Site.Params }}
 
+  {{- $posts := where .Site.RegularPages "Type" "in" $s.mainSections }}
+
+  {{- $featured := default 1 $s.numberOfFeaturedPosts }}
+  {{- $featuredPosts := last $featured (where $posts "Params.featured" true)}}
+  {{- with $featuredPosts }}
+
+  {{- range . }}
+  <div class="featured">
+    {{ partial "excerpt" .}}
+    {{- end }}
+    {{- end }}
+  </div>
+
+</div>
 
 <div id="membership" style="overflow: hidden !important">
 
