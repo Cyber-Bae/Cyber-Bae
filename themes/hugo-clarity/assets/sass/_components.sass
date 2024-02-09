@@ -7,7 +7,44 @@
   left: 1rem
 
 .table
-  box-shadow: 0 1rem 3rem rgba(0,0,0,0.9)
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.5)
+.roles
+  width: 100%
+  #positions
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    width: 90%
+    margin: -5% auto 8%
+    @media (max-width:629px)
+      width: 100%
+      display: block
+      margin: 0 auto
+      .position
+        width: 100% !important
+    .position
+      width: 25%
+      // margin-right: 3%
+      box-shadow: 0 1rem 3rem rgba(0,0,0,0.7)
+      background-color: #dad6d6
+      height: 45vh
+      margin: 0 auto
+      color: black
+      h3
+        margin-left: 5%
+        color: black
+      p
+        width: 90%
+        margin: 0 auto
+
+      
+  .title
+    background-color: var(--table-bg)
+    padding: 5%
+    height: 30%
+    h1
+      margin-left: 5%
+      margin-top: -3%
 
 .ceo
   text-align: center
@@ -56,7 +93,7 @@ h1, h2, h3, h4, h5, h6
     width: 100% !important
     .event-card
       display: block !important
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9)
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7)
     .date
       margin-right: 10%
       line-height: 1
@@ -112,7 +149,7 @@ h1, h2, h3, h4, h5, h6
   width: 75%
   border-radius: 0.5rem
   box-sizing: border-box
-  margin: 0px auto
+  margin: 5% auto
   img
     width: 60%
   .card
@@ -139,7 +176,8 @@ html, body
   //   overflow-y: scroll !important
 
 .to_top
-  margin-bottom: 2%
+  // margin-bottom: 2%
+  margin-left: 8%
 .bg-landing
   background-color: $haze
   color: var(--text)
@@ -247,7 +285,7 @@ html, body
     color: white
   .elements
     display: flex
-    box-shadow: 0 1rem 3rem rgba(0,0,0,0.9)
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.7)
     width: 75%
     height: fit-content
     margin: 0px auto
@@ -456,8 +494,7 @@ html, body
   text-align: center
   background-color: var(--table-bg)
   width: 75%
-  margin: 0px auto
-  margin-bottom: 2%
+  margin: 5% auto
   border-radius: 0.5rem
   @media screen and (max-width: 629px)
     width: 100%
@@ -465,7 +502,6 @@ html, body
     text-transform: uppercase
 
   .text
-    // width: 70%
     margin: 0px auto
 
 .intro_video
@@ -473,6 +509,12 @@ html, body
   background-color: var(--table-bg)
   margin-bottom: 3%
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+  @media screen and (min-width: 630px) and (max-width: 1100px)
+    // display: block
+    padding: 10px
+    video
+      width: 50% !important
+
   @media screen and (max-width: 629px)
     display: block
     .text
@@ -498,7 +540,7 @@ html, body
   width: 85%
   margin-top: 10% !important
   margin: 0px auto
-  
+
   @media screen and (max-width: 629px)
     .search_field
       margin-right: 10%
@@ -541,17 +583,15 @@ html, body
       .search_field
         width: 60%
         margin-right: 50%
-    
+
       @media screen and (max-width: 629px)
         width: 100vw
         border-bottom: double
-       
 
     @media screen and (max-width: 629px)
       display: block
       margin: 0px auto !important
 
-   
   &_inner
     @include content
     display: grid

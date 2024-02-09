@@ -47,10 +47,10 @@ weight = 2
 name = "linkedin"
 url = "https://www.linkedin.com/in/#"
 weight = 3
-[[social]]
-name = "rss"
-url = "index.xml"
-weight = 4
+# [[social]]
+# name = "rss"
+# url = "index.xml"
+# weight = 4
 
 # other supported social links
 # name = "youtube"
