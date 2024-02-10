@@ -34,7 +34,7 @@ const perkDic = [
   {
     img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghlHptcSdZ1lrVHG07nuPMy55SK8BHqsN7zvAc1B7MI4csYoG5iRhDQW-yehrOlbVNtFXG0BXffkiWZxYs_XdOn5Hc03cdOslh8Q9ZrG7dyqHL1x_pQRv9hdlEiUL5bWX2SvuHkeziK9TZfTD9wu0S55SRB3KzRW4qs3o1K55gkcvEB9c/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(8).png",
     title: "Competitive Proposals",
-    description: "Get a head start with our exclusive database of top-paying competitive offers."
+    description: "Get a head start with our exclusive database of top-paying competitive offers. We're here to support you as you further advance your career."
   },
 ];
 
