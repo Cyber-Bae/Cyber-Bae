@@ -190,10 +190,9 @@ html, body
     position: absolute
     left: 65%
     z-index: -99
-    @media screen and (min-width: 630px) and (max-width: 1100px)
-      margin-top: 10%
-    @media screen and(max-width: 629px)
+    @media screen and (min-width: 600px) and (max-width: 1100px)
       display: none
+
   .event-card
     margin: 2%
     padding: 2px
@@ -643,72 +642,77 @@ html, body
 #feature_div
   width: 100%
   background-color: var(--table-bg) !important
-  overflow: auto
-  border-bottom: 1px solid var(--text)
+  overflow: hidden
 
-  // position: relative
-  height: auto
+  border-bottom: 1px solid var(--text)
+  height: fit-content
   .post_item
     width: 100%
     background-color: var(--table-bg) !important
-    @media screen and(max-width: 800px)
-      .exerpt_thumbnail
-        display: none
-      .excerpt_header, .excerpt_footer 
-        float: none !important
-        width: 100% !important
-    
-    
+
+    .excerpt
+      display: flex
+      flex-direction: column
+      height: 60vh
+      flex-wrap: wrap
+      width: 100%
+
+      // @media screen  and (min-width: 900px ) and (max-width: 1100px)
+      //   height: 70vh
+
+
+      @media screen  and  (max-width: 1100px)
+        display: block
+        height: auto
+        .excerpt_thumbnail
+          
+          display: none
+        .excerpt_header, .excerpt_footer
+          float: none
+          width: 100%
+
+
     .excerpt_thumbnail
       float: left
-      width: 45% !important
-      object-fit: cover !important
-      height: 65vh
       background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6OLnXMtIF7_zHO3cyUzy87XLIjnxPp5mPv2Zah1aGPrHq9iclqyjV1qTh4tUGai8lYUqyfRdEagokJwL2GU0Uu3BL0nwn9daMWK8xIkS836URh0-n4CW8bptZA4-ZMA_IwsSdPsPd1SGxpJmIok8Tohgjt9nmxBLxQoIMqo6RhVkz28w/s1600/Is%20it%20Worth%20Becoming%20a%20Web%20Developer%20in%202024%20.png")
-      margin-top: -10%
       border-radius: 0px
-      position: inherit
+      width: 45%
+      height: 100%
 
-      @media screen and (min-width: 800px) and (max-width:1200px)
-        height: 56vh
-
-      
       img
         display: none
-    .excerpt_header, .excerpt_footer 
+    .excerpt_header, .excerpt_footer
       float: right
-      width: 45% 
-      margin-top: -2%
-      margin-right: 5%
-.posts 
+      width: 50%
+
+.posts
   display: flex
   flex-wrap: wrap
   width: 100%
   margin-top: 10% !important
   @media screen and (max-width: 667px)
     margin-top: 20% !important
- 
-  
+
   .featured
     width: 60%
     margin-left: 3%
-    
+
     @media screen and (max-width: 667px)
       width: 100%
       margin-left: 0%
-    
+
     // border-right: double
     .post_item
-      width:  100%
+      width: 100%
       // border-top: none !important
-      
+
   .post_item
     width: 30%
     box-sizing: border-box
     border: 3px solid var(--text)
-    margin: -5px auto 5%
     background-color: transparent
     border-radius: 0
+    margin-bottom: 0px
     @media screen and (max-width: 667px)
       width: 100%
 // .posts
@@ -766,7 +770,6 @@ html, body
       padding-top: 0
   &_item
     // box-shadow: 0  2.25rem 1.25rem -1.25rem var(--shadow)
-    margin-bottom: 3rem
     border-radius: 0.5rem
     background: var(--table-bg)
     width: 50%

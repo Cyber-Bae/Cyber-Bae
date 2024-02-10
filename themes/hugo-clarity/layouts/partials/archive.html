@@ -145,11 +145,9 @@
   {{- with $featuredPosts }}
 
   {{- range . }}
-  <div class="featured">
-    {{ partial "excerpt" .}}
-    {{- end }}
-    {{- end }}
-  </div>
+  {{ partial "excerpt" .}}
+  {{- end }}
+  {{- end }}
 
 </div>
 
