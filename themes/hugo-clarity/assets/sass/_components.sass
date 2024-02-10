@@ -26,13 +26,13 @@
       width: 25%
       // margin-right: 3%
       box-shadow: 0 1rem 3rem rgba(0,0,0,0.7)
-      background-color: #dad6d6
+      background-color: var(--table-bg)
       height: fit-content
       margin: 0 auto
-      color: black
+      color: var(--text)
       h3
         margin-left: 5%
-        color: black
+        color: var(--text)
       p
         width: 90%
         margin: 0 auto
@@ -42,8 +42,7 @@
     padding: 5%
     height: 30%
     h1
-      margin-left: 5%
-      margin-top: -3%
+      margin: 0 auto
 
 .ceo
   text-align: center
@@ -54,7 +53,7 @@
       display: block
 
     .text
-      width: 80%
+      width: 90%
       margin-right: 20%
       @media (max-width:629px)
         width: 100%
@@ -65,8 +64,8 @@
 
   img
     border-radius: 50%
-    width: 15%
-    height: 15%
+    width: 10%
+    height: 10%
     shape-outside: circle()
     margin-left: 20%
     @media (max-width:629px)
@@ -77,6 +76,11 @@
 h1, h2, h3, h4, h5, h6
   opacity: 0.8
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+
+@media screen and (min-height: 1100px) and(max-height: 1330px)
+  #perks
+    .card
+      height: 20vh
 @media (max-width:629px)
   #perks
     display: block !important
@@ -85,6 +89,7 @@ h1, h2, h3, h4, h5, h6
     .card
       border-right: none !important
       border-bottom: double !important
+      width: 100% !important
 
   #events-container
     margin: 0 auto !important
@@ -144,19 +149,20 @@ h1, h2, h3, h4, h5, h6
   text-align: center
   margin-bottom: 3%
   // background-color: var(--table-bg)
-  width: 75%
+  width: 85%
   border-radius: 0.5rem
   box-sizing: border-box
-  margin: 5% auto
+  margin: 1% auto
   img
     width: 60%
+    max-height: 30%
   .card
     // margin: 3%  
-    border-right: double
     text-align: center
     justify-content: center
     align-items: center
-    // height: 60vh
+    height: 70vh
+    width: 30%
     p
       width: 90%
       margin: 0px auto
@@ -182,6 +188,7 @@ html, body
 #events-container
   width: 70%
   margin-left: 2%
+  margin-bottom: 10%
   button
     bottom: 100%
   .images
