@@ -206,8 +206,8 @@ html, body
     padding-block: 3px
     background: var(--table-bg)
     display: flex
-    border-radius: 0.5rem
     box-sizing: border-box
+    border: 1px solid var(--text)
     picture
       width: 50%
       margin-right: 2%
@@ -655,7 +655,6 @@ html, body
   height: fit-content
   .post_item
     width: 100%
-    background-color: var(--table-bg) !important
 
     .excerpt
       display: flex
@@ -695,14 +694,28 @@ html, body
 .posts
   display: flex
   flex-wrap: wrap
-  width: 100%
-  margin-top: 10% !important
+  width: 85%
+  margin: 10% auto 5% !important
+  align-items: stretch
+  justify-content: center 
+  .post_item
+    width: 40% 
+    margin: 3% auto 3%
+    box-sizing: border-box
+    border: 1px solid var(--text)
+    background-color: transparent
+    border-radius: 0
+    margin-bottom: 0px
+    flex: 1
+    margin-right: 5%
   @media screen and (max-width: 667px)
     margin-top: 20% !important
 
   .featured
-    width: 60%
-    margin-left: 3%
+    width: 60% !important
+    margin-right: 3%
+    .post_item
+      width: 100% !important
 
     @media screen and (max-width: 667px)
       width: 100%
@@ -714,39 +727,17 @@ html, body
       // border-top: none !important
 
   .post_item
-    width: 30%
+    width: 35%
     box-sizing: border-box
-    border: 3px solid var(--text)
+    border: 1px solid var(--text)
     background-color: transparent
     border-radius: 0
     margin-bottom: 0px
+    flex: 1
+    margin-right: 5%
+
     @media screen and (max-width: 667px)
       width: 100%
-// .posts
-//   display: flex
-//   height: auto
-//   flex-wrap: wrap
-//   justify-content: space-around
-//   margin-top: 5% 4%
-//   width: 100vw !important
-//   // margin-left: 3%
-//   .featured
-//     width: 60%
-//     margin-right: 30%
-//     // margin-right: 5%
-//     height: 60vh
-//     .post_item
-//       width: 100%
-
-//   .post
-//     width: 100% !important
-//     margin: 0px auto
-//     // display: flex
-//     // flex-wrap: wrap
-//     .post_item
-//       width: 30%
-//   @media screen and(max-width: 667px)
-//     display: block
 
 .post
   .excerpt_thumbnail
