@@ -6,49 +6,6 @@ function paginationDisplay(container) {
 
 }
 
-function createPaginationButtons() {
-    const upcomingEvents = eventDic.filter(event => event.date >= new Date());
-    const currentPage = 1
-    const numPages = Math.ceil(upcomingEvents.length / 2);
-    const eventsPagination = document.getElementById("events-pagination");
-
-    eventsPagination.innerHTML = ""; // Clear previous buttons
-
-    // Create previous arrow button (if needed)
-    if (currentPage > 1) {
-        const prevButton = document.createElement("button");
-        prevButton.textContent = "Previous"; // Or use an arrow icon
-        prevButton.addEventListener("click", () => {
-            currentPage--;
-            displayPage(currentPage);
-        });
-        eventsPagination.appendChild(prevButton);
-    }
-
-    // Create page number buttons
-    for (let i = 1; i <= numPages; i++) {
-        const button = document.createElement("button");
-        button.textContent = i;
-        button.addEventListener("click", () => {
-            currentPage = i;
-            displayPage(i);
-        });
-        eventsPagination.appendChild(button);
-    }
-
-    // Create next arrow button (if needed)
-    if (currentPage < numPages) {
-        const nextButton = document.createElement("button");
-        nextButton.textContent = "Next"; // Or use an arrow icon
-        nextButton.addEventListener("click", () => {
-            currentPage++;
-            displayPage(currentPage);
-        });
-        eventsPagination.appendChild(nextButton);
-    }
-}
-
-
 
 function eventHTML(eventsContainer, event) {
     const eventCard = document.createElement("div");

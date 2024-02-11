@@ -25,15 +25,14 @@
     .position
       width: 25%
       border: 1px solid var(--text)
-      box-shadow: 0 1rem 3rem rgba(0,0,0,0.7)
-      background-color: var(--table-bg)
       flex: 1
       color: var(--text)
       box-sizing: border-box
       padding: 20px
       h3
         margin-left: 5%
-        color: var(--text)
+        // color: var(--text)
+        background-color: var(--highlight)
       p
         width: 90%
         margin: 0 auto
@@ -82,14 +81,14 @@ h1, h2, h3, h4, h5, h6
   #perks
     .card
       height: 100%
+      margin: 0 auto
 @media (max-width:629px)
   #perks
     display: block !important
     width: 100%
 
     .card
-      border-right: none !important
-      border-bottom: double !important
+
       width: 100% !important
 
   #events-container
