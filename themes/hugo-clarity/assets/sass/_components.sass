@@ -13,25 +13,24 @@
   #positions
     display: flex
     flex-wrap: wrap
-    align-items: center
-    width: 90%
+    width: 80%
     margin: -5% auto 8%
+    align-items: stretch
     @media (max-width:629px)
       width: 100%
       display: block
       margin: 0 auto
       .position
         width: 100% !important
-        border: 1px solid var(--text)
     .position
       width: 25%
-      margin-right: 3%
       border: 1px solid var(--text)
       box-shadow: 0 1rem 3rem rgba(0,0,0,0.7)
       background-color: var(--table-bg)
-      height: 40%
-      margin: 0 auto
+      flex: 1
       color: var(--text)
+      box-sizing: border-box
+      padding: 20px
       h3
         margin-left: 5%
         color: var(--text)
@@ -116,6 +115,7 @@ h1, h2, h3, h4, h5, h6
   background: var(--table-bg)
   padding: 0
   overflow: auto
+  border-bottom: 1px solid var(--text)
   .container
     width: 45%
     margin-right: 3%
@@ -146,27 +146,24 @@ h1, h2, h3, h4, h5, h6
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
 #perks
   display: flex
-  align-items: center
+  align-items: stretch
   justify-content: center
   text-align: center
-  // background-color: var(--table-bg)
-  width: 85%
+  width: 75%
   border-radius: 0.5rem
   box-sizing: border-box
   margin: 1% auto
   img
     width: 60%
-    height: 30%
+    // height: 30%
     margin-bottom: 5%
   .card
     // margin: 3%  
     border: 1px solid var(--text)
     text-align: center
     justify-content: center
-    align-items: center
-    // height: 100%
-    width: 30%
-    height: 60%
+    flex: 1
+    width: 25%
     p
       width: 90%
       margin: 0px auto

@@ -5,6 +5,12 @@
 {{ $eventsScriptPath := "js/events.js" }}
 {{ $events := resources.Get $eventsScriptPath | resources.ExecuteAsTemplate $eventsScriptPath . }}
 
+{{ $modelsScriptPath := "js/models.js" }}
+{{ $models := resources.Get $modelsScriptPath | resources.ExecuteAsTemplate $modelsScriptPath . }}
+
+{{ $paginationScriptPath := "js/pagination.js" }}
+{{ $pagination := resources.Get $paginationScriptPath | resources.ExecuteAsTemplate $paginationScriptPath . }}
+
 {{ $variablesScriptPath := "js/variables.js" }}
 {{ $variables := resources.Get $variablesScriptPath | resources.ExecuteAsTemplate (printf "%s/js/variables.js" .Lang) . }}
 
@@ -24,6 +30,6 @@
 {{ $main := resources.Get $mainScriptPath | resources.ExecuteAsTemplate $mainScriptPath . }}
 
 {{ $bundlePath := (printf "%s/js/bundle.js" .Lang ) }}
-{{ $bundle := slice $highlight $variables $functions $events $code $main $custom | resources.Concat $bundlePath | resources.Fingerprint "sha512" }}
+{{ $bundle := slice $highlight $variables $functions $events $models $pagination $code $main $custom | resources.Concat $bundlePath | resources.Fingerprint "sha512" }}
 
 {{ return $bundle }}

@@ -95,6 +95,7 @@
   <div id="positions">
 
   </div>
+  <div class="pagination"></div>
 
 </div>
 
@@ -135,21 +136,8 @@
   <div id="event-cards"></div>
   <div id="events-pagination"></div>
 </div>
-<div id="feature_div">
-  {{- $s := .Site.Params }}
 
-  {{- $posts := where .Site.RegularPages "Type" "in" $s.mainSections }}
 
-  {{- $featured := default 1 $s.numberOfFeaturedPosts }}
-  {{- $featuredPosts := last $featured (where $posts "Params.featured" true)}}
-  {{- with $featuredPosts }}
-
-  {{- range . }}
-  {{ partial "excerpt" .}}
-  {{- end }}
-  {{- end }}
-
-</div>
 
 <div id="membership" style="overflow: hidden !important">
 
@@ -172,6 +160,25 @@
   </div>
 
 </div>
+
+
+
+<div id="feature_div">
+  {{- $s := .Site.Params }}
+
+  {{- $posts := where .Site.RegularPages "Type" "in" $s.mainSections }}
+
+  {{- $featured := default 1 $s.numberOfFeaturedPosts }}
+  {{- $featuredPosts := last $featured (where $posts "Params.featured" true)}}
+  {{- with $featuredPosts }}
+
+  {{- range . }}
+  {{ partial "excerpt" .}}
+  {{- end }}
+  {{- end }}
+
+</div>
+
 
 
 <div class="sponsors" style="overflow: hidden !important">
