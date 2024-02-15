@@ -10,15 +10,21 @@ addEventListener("DOMContentLoaded", (ev) => {
 
   const perkContainer = document.getElementById("perks")
 
+  const rolePagination = document.getElementById("role_pagination")
+
   const eventsContainer = document.getElementById("event-cards");
+
+  const pageLinks = document.getElementsByClassName("page-link")
+
   const eventsPagination = document.getElementById("events-pagination"); // Add a container for pagination buttons
   // Filter events to display only upcoming ones
   const upcomingEvents = eventDic.filter(event => event.date >= new Date());
 
   const pageNumber = 1;
-  const startIndex = (pageNumber - 1) * 2;
+  startIndex = (pageNumber - 1) * 3
 
-  upcomingEvents.slice(startIndex, Math.min(startIndex + 2, eventDic.length)).forEach(event => {
+
+  upcomingEvents.slice(startIndex,  eventDic.lengt).forEach(event => {
     eventHTML(eventsContainer, event)
   });
 
@@ -36,13 +42,30 @@ addEventListener("DOMContentLoaded", (ev) => {
     })
   }
 
-  if (positionContainer != null) {
-    positionDic.slice(startIndex, Math.min(startIndex + 3, eventDic.length)).forEach(event => {
-      positionHTML(positionContainer, event)
+  let count = 1
 
-    });
+
+  if (positionContainer != null && rolePagination != null && pageLinks != null) {
+  
+    positionDic.slice(startIndex, Math.min(startIndex + 3, positionDic.length)).forEach(event => {
+      positionHTML(positionContainer, event)
+      pagination(rolePagination, count )
+      count ++
+
+    })
+
+    Array.from(pageLinks).forEach(link =>{
+      swipe(link, positionDic, 1)
+    })
+
+
+    // for (let i=0; i< pageLinks.length; i++){
+    //   swipe(pageLinks[i], positionDic)
+    // }
+
+
   }
 
-  createPaginationButtons();
+
 
 })

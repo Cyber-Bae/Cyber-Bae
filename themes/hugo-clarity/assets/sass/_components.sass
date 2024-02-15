@@ -5,16 +5,25 @@
   border-right: 0.33rem solid transparent
   top: -0.5rem
   left: 1rem
-
+.page-link
+  margin: 2px
+.page-link
+  color: var(--text) !important
 .table
   box-shadow: 0 1rem 3rem rgba(0,0,0,0.5)
 .roles
   width: 100%
+  nav
+    align-items: center
+    justify-content: center
+    align-content: center
+    display: flex
+
   #positions
     display: flex
     flex-wrap: wrap
-    width: 80%
-    margin: -5% auto 8%
+    width: 75%
+    margin: -5% auto 3%
     align-items: stretch
     @media (max-width:629px)
       width: 100%
@@ -166,6 +175,14 @@ h1, h2, h3, h4, h5, h6
     p
       width: 90%
       margin: 0px auto
+.slide-out
+  transition: transform 0.5s ease-out
+  transform: translateX(-100%)
+
+/* Define the sliding animation for sliding in */
+.slide-in
+  transition: transform 0.5s ease-in
+  transform: translateX(0)
 
 html, body
   overflow-x: hidden !important
@@ -202,7 +219,7 @@ html, body
 
   .event-card
     margin: 2%
-    padding: 10px
+    padding: 10git px
     padding-block: 3px
     background: var(--table-bg)
     display: flex
@@ -666,17 +683,15 @@ html, body
       // @media screen  and (min-width: 900px ) and (max-width: 1100px)
       //   height: 70vh
 
-
       @media screen  and  (max-width: 1100px)
         display: block
         height: auto
         .excerpt_thumbnail
-          
+
           display: none
         .excerpt_header, .excerpt_footer
           float: none
           width: 100%
-
 
     .excerpt_thumbnail
       float: left
@@ -697,9 +712,9 @@ html, body
   width: 85%
   margin: 10% auto 5% !important
   align-items: stretch
-  justify-content: center 
+  justify-content: center
   .post_item
-    width: 40% 
+    width: 40%
     margin: 3% auto 3%
     box-sizing: border-box
     border: 1px solid var(--text)

@@ -66,30 +66,34 @@ const eventDic = [
 
 const positionDic = [
     {
-      role: "Cloud Development",
-      description: "No matter your experience level or preferred platform, we help you chart your unique path in the dynamic cloud development landscape. Explore diverse roles, from back-end engineering to DevOps, and work with companies at every scale, from startups to global giants."
+        role: "Cloud Development",
+        description: "No matter your experience level or preferred platform, we help you chart your unique path in the dynamic cloud development landscape. Explore diverse roles, from back-end engineering to DevOps, and work with companies at every scale, from startups to global giants."
     },
     {
-      role: "Artificial Intelligence",
-      description: "From deep learning engineers to natural language processing specialists, we connect you with exciting AI roles that match your unique skills and passions. We work with a wide range of organizations, from research labs to established companies, offering remote, hybrid, and on-site options to suit your lifestyle."
+        role: "Artificial Intelligence",
+        description: "From deep learning engineers to natural language processing specialists, we connect you with exciting AI roles that match your unique skills and passions. We work with a wide range of organizations, from research labs to established companies, offering remote, hybrid, and on-site options to suit your lifestyle."
     },
     {
-      role: "Project Management",
-      description: "We propel your journey in the dynamic world of project management. Drive transformative projects across diverse industries, from tech startups to global corporations, and make a tangible impact on the world."
+        role: "Project Management",
+        description: "We propel your journey in the dynamic world of project management. Drive transformative projects across diverse industries, from tech startups to global corporations, and make a tangible impact on the world."
 
     },
     {
-      role: "Compliance Standards",
-      description: "From internal controls specialists to data privacy experts, we connect you with exciting compliance roles that match your unique skills and passions. We work with a wide range of organizations, from healthcare institutions to financial services companies, offering remote, hybrid, and on-site options to suit your lifestyle."
+        role: "Compliance Standards",
+        description: "From internal controls specialists to data privacy experts, we connect you with exciting compliance roles that match your unique skills and passions. We work with a wide range of organizations, from healthcare institutions to financial services companies, offering remote, hybrid, and on-site options to suit your lifestyle."
     },
     {
-      role: "IT Support",
-      description: "From helpdesk specialists to network administrators, we connect you with exciting IT support roles that match your unique skills and passions. We work with a wide range of organizations across various industries, offering remote, hybrid, and on-site options to suit your lifestyle."
+        role: "IT Support",
+        description: "From helpdesk specialists to network administrators, we connect you with exciting IT support roles that match your unique skills and passions. We work with a wide range of organizations across various industries, offering remote, hybrid, and on-site options to suit your lifestyle."
 
     },
     {
-      role: "Web Design",
-      description: "Whether you're a design newbie brimming with ideas or a seasoned pro seeking exciting challenges, we connect you with companies eager to bring your vision to life. From sleek startups to established brands, explore diverse projects and leave your mark on the web."
+        role: "Web Design",
+        description: "Whether you're a design newbie brimming with ideas or a seasoned pro seeking exciting challenges, we connect you with companies eager to bring your vision to life. From sleek startups to established brands, explore diverse projects and leave your mark on the web."
     },
-   
-  ]
+    {
+        role: "Web Design2",
+        description: "Whether you're a design newbie brimming with ideas or a seasoned pro seeking exciting challenges, we connect you with companies eager to bring your vision to life. From sleek startups to established brands, explore diverse projects and leave your mark on the web."
+    },
+
+]
