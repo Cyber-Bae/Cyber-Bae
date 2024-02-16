@@ -104,6 +104,10 @@ h1, h2, h3, h4, h5, h6
   #events-container
     margin: 0 auto !important
     overflow: hidden !important
+    background-image: url('../images/swirl_1.png')
+    background-size: cover
+    // background-repeat: no-repeat
+    // background-attachment: fixed
     width: 100% !important
     .event-card
       display: block !important
@@ -281,7 +285,7 @@ html, body
   height: 100vh
   padding: 20px
   background-size: cover
-  background-image: url(./images/globe.png)
+  background-image: url("../images/header.png")
   background-position: center
   background-repeat: no-repeat
   display: flex
@@ -312,7 +316,8 @@ html, body
     height: fit-content
     margin: 0px auto
     border-radius: 0.5rem
-    background: linear-gradient(to bottom, var(--choice-bg), black )
+    background-color: var(--table-bg-rgb)
+    // background: linear-gradient(to bottom, var(--choice-bg), black )
 
     .text
       margin-left: 5%
@@ -333,14 +338,14 @@ html, body
         display: none
     .text
       margin-left: 10%
-      width: 70%
+      width: 60%
       position: relative
 
     img
-      width: 50%
+      width: 40%
       height: auto
       shape-outside: circle()
-      left: 15%
+      left: 10%
       position: relative
       top: 3.5%
       margin-left: -18%
@@ -372,6 +377,8 @@ html, body
   // justify-content: space-between
   height: 100%
   @include content
+  a
+    color: var(--text)
   &_active
     background-color: rgba($light, 0.05)
     border-radius: 0.25rem
@@ -386,7 +393,8 @@ html, body
     display: flex
     flex: 1
   &_header
-    background-color: $bg
+    background-color: var(--choice-bg)
+    color: var(--text)
     padding: 0 1.5rem
     position: fixed
     width: 100%
@@ -409,6 +417,8 @@ html, body
     overflow: hidden
     padding: 0.96rem 0 0
     background: transparent
+    a
+      color: white !important
 
   &_parent
     position: relative
@@ -438,8 +448,9 @@ html, body
     overflow: hidden
     border-radius: 0.5rem
     padding-bottom: 0.5rem
+    
     @media screen and (min-width: $mobile-menu-breakpoint)
-      color: white
+      color: white !important
     &::before, &::after
       content: ""
       position: absolute
@@ -513,19 +524,34 @@ html, body
 .purpose
   margin-top: 6%
   padding: 10px
+  background-image: url(../images/cyberBae.png)
+  height: 50vh
+
   text-align: center
-  background-color: var(--table-bg)
+  align-items: center
+  justify-content: center
+  background-size: cover
+  background-repeat: no-repeat
+  background-attachment: fixed
   width: 100%
   margin: 5% auto
   // border-radius: 0.5rem
   @media screen and (max-width: 629px)
     width: 100%
+    height: fit-content
+
+  // h1 , .text
+  //   // background-color: var(--table-bg-rgb)
+  //   padding: 20px
+
   h1
     text-transform: uppercase
 
   .text
     margin: 0px auto
     width: 90%
+    padding: 20px
+    background-color: var(--table-bg-rgb)
 
 .intro_video
   display: flex
