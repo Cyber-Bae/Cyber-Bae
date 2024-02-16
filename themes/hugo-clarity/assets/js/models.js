@@ -91,9 +91,6 @@ const positionDic = [
         role: "Web Design",
         description: "Whether you're a design newbie brimming with ideas or a seasoned pro seeking exciting challenges, we connect you with companies eager to bring your vision to life. From sleek startups to established brands, explore diverse projects and leave your mark on the web."
     },
-    {
-        role: "Web Design2",
-        description: "Whether you're a design newbie brimming with ideas or a seasoned pro seeking exciting challenges, we connect you with companies eager to bring your vision to life. From sleek startups to established brands, explore diverse projects and leave your mark on the web."
-    },
+
 
 ]

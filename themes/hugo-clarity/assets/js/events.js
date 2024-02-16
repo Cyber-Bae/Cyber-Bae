@@ -24,7 +24,7 @@ addEventListener("DOMContentLoaded", (ev) => {
   startIndex = (pageNumber - 1) * 3
 
 
-  upcomingEvents.slice(startIndex,  eventDic.lengt).forEach(event => {
+  upcomingEvents.slice(startIndex, eventDic.lengt).forEach(event => {
     eventHTML(eventsContainer, event)
   });
 
@@ -46,22 +46,26 @@ addEventListener("DOMContentLoaded", (ev) => {
 
 
   if (positionContainer != null && rolePagination != null && pageLinks != null) {
-  
+
+    let finalCount;
+
+
     positionDic.slice(startIndex, Math.min(startIndex + 3, positionDic.length)).forEach(event => {
       positionHTML(positionContainer, event)
-      pagination(rolePagination, count )
+
+      if ((positionDic.length) / count == 3) {
+        finalCount = count + 1
+      }
+      if (count < finalCount || isNaN(finalCount)) {
+        pagination(rolePagination, count)
+      }
       count ++
 
     })
 
-    Array.from(pageLinks).forEach(link =>{
+    Array.from(pageLinks).forEach(link => {
       swipe(link, positionDic, 1)
     })
-
-
-    // for (let i=0; i< pageLinks.length; i++){
-    //   swipe(pageLinks[i], positionDic)
-    // }
 
 
   }

@@ -32,9 +32,10 @@
       .position
         width: 100% !important
     .position
-      width: 25%
+      max-width: 30%
       border: 1px solid var(--text)
       flex: 1
+      margin: 0px auto
       color: var(--text)
       box-sizing: border-box
       padding: 20px
@@ -713,8 +714,9 @@ html, body
   margin: 10% auto 5% !important
   align-items: stretch
   justify-content: center
+  flex-direction: row
   .post_item
-    width: 40%
+    max-width: 40%
     margin: 3% auto 3%
     box-sizing: border-box
     border: 1px solid var(--text)
@@ -730,7 +732,7 @@ html, body
     width: 60% !important
     margin-right: 3%
     .post_item
-      width: 100% !important
+      min-width: 100% !important
 
     @media screen and (max-width: 667px)
       width: 100%

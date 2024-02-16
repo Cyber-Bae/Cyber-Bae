@@ -16,11 +16,11 @@ weight = -108
 [[main]]
 name = "Bootcamps"
 parent = "Links"
-url = "#"
+url = "#/notFound"
 [[main]]
 name = "Membership"
 parent = "Links"
-url = "#"
+url = "#/notFound"
 
 [[main]]
 name = "About"
