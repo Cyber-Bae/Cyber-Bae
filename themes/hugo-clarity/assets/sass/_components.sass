@@ -104,11 +104,19 @@ h1, h2, h3, h4, h5, h6
   #events-container
     margin: 0 auto !important
     overflow: hidden !important
-    background-image: url('../images/swirl_1.png')
+    // background-size: cover
+    background-image: url("../images/swirl_1.png")
+    background-position: center
+    background-repeat: no-repeat
+    // background-image: url('../images/swirl_1.png')
     background-size: cover
+    display: flex
     // background-repeat: no-repeat
     // background-attachment: fixed
     width: 100% !important
+
+    .image
+      margin: 0px auto !important
     .event-card
       display: block !important
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7)
@@ -448,7 +456,7 @@ html, body
     overflow: hidden
     border-radius: 0.5rem
     padding-bottom: 0.5rem
-    
+
     @media screen and (min-width: $mobile-menu-breakpoint)
       color: white !important
     &::before, &::after
@@ -526,6 +534,7 @@ html, body
   padding: 10px
   background-image: url(../images/cyberBae.png)
   height: 50vh
+  display: flex
 
   text-align: center
   align-items: center
@@ -546,12 +555,16 @@ html, body
 
   h1
     text-transform: uppercase
+    width: 100% !important
+    @media screen and (max-width: 629px)
+      font-size: 180%
 
   .text
     margin: 0px auto
     width: 90%
     padding: 20px
     background-color: var(--table-bg-rgb)
+    text-align: center
 
 .intro_video
   display: flex
@@ -770,6 +783,9 @@ html, body
     margin-bottom: 0px
     flex: 1
     margin-right: 5%
+    @media screen and (max-width: 667px)
+      min-width: 100%
+
   @media screen and (max-width: 667px)
     margin-top: 20% !important
 
@@ -777,11 +793,17 @@ html, body
     width: 60% !important
     margin-right: 3%
     .post_item
-      min-width: 100% !important
+      max-width: 100% !important
 
     @media screen and (max-width: 667px)
-      width: 100%
+      min-width: 100%
       margin-left: 0%
+      .post-item
+        max-width: 100% !important
+
+    
+
+
 
     // border-right: double
     .post_item
@@ -1215,6 +1237,7 @@ figcaption
   text-transform: capitalize
 
 .image
+
   &-scale
     position: fixed
     z-index: 999999
