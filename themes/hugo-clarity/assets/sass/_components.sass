@@ -140,8 +140,10 @@ h1, h2, h3, h4, h5, h6
   .container
     width: 45%
     margin-right: 3%
-    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimp4HIwoRRL_puA-XHe1av2DaWNTMffadKMlTfEkFy-c3P-WY77CJI2skeP7aI4-FkaVmFKcfOSpf3LoaugjVLDbZdWQqUyo9ECX83-UERKVOVebLxMgk4QBdVfynwjn0xuNFqvDLY7F9ZXK2Cj60UkBD1-XRldXPBpgmgrVz-EYTr6cs/s1600/Blue%20Green%20and%20White%20Modern%20Tech%20Article%20Facebook%20Post%20(1).png")
-    object-fit: cover
+    background-image: url("../images/membership.png")
+    background-color: white
+    background-position: center
+    // object-fit: cover
     @media screen and (max-width: 695px)
       width: fit-content
 
@@ -219,6 +221,10 @@ html, body
   width: 70%
   margin-left: 2%
   margin-bottom: 10%
+  @media screen and(max-width: 625px)
+    display: block
+    margin: 0px auto
+    margin-left: 0% !important
   button
     bottom: 100%
   .images
@@ -238,6 +244,8 @@ html, body
     display: flex
     box-sizing: border-box
     border: 1px solid var(--text)
+    @media screen and(max-width: 625px)
+      margin: 0px auto
     picture
       width: 50%
       margin-right: 2%
@@ -800,10 +808,6 @@ html, body
       margin-left: 0%
       .post-item
         max-width: 100% !important
-
-    
-
-
 
     // border-right: double
     .post_item
