@@ -6,7 +6,7 @@ weight = -110
 [[main]]
 name = "Introduction to Cybersecurity"
 parent = "Courses"
-url = "notFound/"
+url = "fundamentalsofcybersecurity/"
 weight = -108
 
 [[main]]

@@ -16,13 +16,20 @@
 
 <!-- <div > -->
 
-{{- if ne $t "Blog"}}
+{{- if eq $t "Fundamentals of Cybersecurity" }}
+  {{- partial "introduction_to_cybersecurity.html"}}
+{{end}}
+
+{{- if and ( ne $t "Blog")  ( ne $t "Fundamentals of Cybersecurity") }}
 
 <article class="post_content">
+
+  {{- if ne $t "About"}}
   
   <h1 class="post_title">{{ $t | markdownify }}</h1>
   {{- partial "post-meta" . }}
   {{- with .Params.featureImage -}}
+  {{- end}}
   <div class="post_featured">
     {{- partial "image" (dict "file" $p.featureImage "alt" $p.featureImageAlt "cap" $p.featureImageCap "type"
     "featured" "Page" $.Page) }}
@@ -61,7 +68,7 @@
 
 </article>
 {{end}}
-{{- if and ( ne $p.sidebar false ) ( ne $t "Blog") }}
+{{- if and ( ne $p.sidebar false ) ( ne $t "Blog") (ne $t "Fundamentals of Cybersecurity") }}
 {{- partial "sidebar" . }}
 {{ end }}
 
@@ -86,7 +93,7 @@
 
 
   {{- range $pages }}
-  {{- if and (ne .Title "About") (ne .Title "Blog") }}
+  {{- if and (ne .Title "About") (ne .Title "Fundamentals of Cybersecurity") (ne .Title "Blog") }}
   {{ partial "excerpt" .}}
   {{- end}}
   {{- end}}

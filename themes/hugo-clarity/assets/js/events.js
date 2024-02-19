@@ -49,7 +49,6 @@ addEventListener("DOMContentLoaded", (ev) => {
 
     let finalCount;
 
-
     positionDic.slice(startIndex, Math.min(startIndex + 3, positionDic.length)).forEach(event => {
       positionHTML(positionContainer, event)
 
@@ -60,7 +59,6 @@ addEventListener("DOMContentLoaded", (ev) => {
         pagination(rolePagination, count)
       }
       count ++
-
     })
 
     Array.from(pageLinks).forEach(link => {
