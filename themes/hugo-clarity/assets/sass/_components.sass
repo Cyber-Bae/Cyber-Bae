@@ -499,10 +499,14 @@ article
 
   &_brand
     img
-      max-width: 15vw
+      width: 100%
+      height: auto
       margin: 0
+      @media screen and (max-width: 625px)
+        max-width: 30%
     @media screen and (min-width: $mobile-menu-breakpoint)
       padding-left: 0
+      max-width: 30%
       // margin-left: -16rem
       // transform: translateX(50rem)
       img
