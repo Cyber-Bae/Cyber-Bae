@@ -46,8 +46,7 @@ function sponsorHTML(container, event) {
   const sponsorElement = document.createElement("div")
   sponsorElement.classList.add("sponsor")
   sponsorElement.innerHTML = `
-          <img src="${event.img}">
-          <p>${event.description}</p>
+          <a href="${event.url}"> <img src="${event.img}"></a>
         `
   container.appendChild(sponsorElement)
 }

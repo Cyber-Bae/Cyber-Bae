@@ -12,11 +12,21 @@
 
 {{ $imagesPath := printf "../%s" (default "images/" .Site.Params.imagesDir) }}
 
+{{ $url := printf "%stags/" .Site.BaseURL }}
 
+{{ if not (and (strings.HasPrefix .Page.Permalink $url) (strings.HasSuffix .Page.Permalink "/")) }}
 
+{{- $params := .Site.Params }}
+{{- $centerLogo := $params.centerLogo }}
+{{ $logo := $params.logo }}
 
-<header class="header" style="overflow-x: hidden !important;" width="100vw">
+<div class="header" style="overflow-x: hidden !important;" width="100vw">
 
+  {{- if $centerLogo }}
+  {{- partialCached "logo" (dict "logo" $logo "class" "nav_hide") }}
+  {{- else }}
+  {{- partialCached "logo" (dict "logo" $logo) }}
+  {{- end }}
   <div class="elements">
 
     <div class="text">
@@ -33,10 +43,44 @@
     <img src="./images/check.png">
 
   </div>
-  <img class="image design" src="./images/swirl_1.png">
 
 
-</header>
+</div>
+
+<div class="second_header">
+  <nav class="nav box">
+    {{- if $centerLogo }}
+    {{- partialCached "logo" (dict "logo" $logo "class" "nav_hide") }}
+    {{- else }}
+    {{- partialCached "logo" (dict "logo" $logo) }}
+    {{- end }}
+    <div class='nav_body nav_body_{{ default "left" $params.mobileNavigation }}'>
+      {{ $context := . }}
+      {{ $menuData := .Site.Data.menu }}
+      {{ with $menuData }}
+      {{ partial "nav" (dict "context" $context "menu" $menuData) }}
+      {{- else }}
+      {{ partial "nav" (dict "context" . "menu" .Site.Menus.main) }}
+      {{- end }}
+
+      <ul>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-linkedin"></i>
+      </ul>
+
+      {{- if $centerLogo }}
+      {{- partial "logo" (dict "logo" $logo "class" "nav_center") }}
+      {{- end }}
+      {{- partialCached "follow" . }}
+    </div>
+  </nav>
+
+</div>
+
+{{- partial "header" . }}
+
 
 <div class="intro_video" style="overflow: hidden !important">
 
@@ -57,14 +101,14 @@
     }
   </style>
   <div class="text">
-    <h3>🔐 Why Choose Our Course?</h3>
+    <h1>🔐 Why Choose Our Course?</h1>
     <ul>
-      <li><b class="highlight">Expert-Led Training:</b> Learn from industry professionals with hands-on experience.</li>
-      <li><b class="highlight">Real-world Scenarios:</b> Tackle practical challenges to enhance your problem-solving
+      <li><b class="bold">Expert-Led Training:</b> Learn from industry professionals with hands-on experience.</li>
+      <li><b class="bold">Real-world Scenarios:</b> Tackle practical challenges to enhance your problem-solving
         skills.</li>
-      <li><b class="highlight">Certification Ready:</b> Gain globally recognized certifications upon course completion.
+      <li><b class="bold">Certification Ready:</b> Gain globally recognized certifications upon course completion.
       </li>
-      <li><b class="highlight">Interactive Learning:</b> Engage in dynamic discussions and collaborate with peers.</li>
+      <li><b class="bold">Interactive Learning:</b> Engage in dynamic discussions and collaborate with peers.</li>
     </ul>
     <a href="#" class="button">Sign Up Now</a>
 
@@ -76,56 +120,52 @@
 </div>
 
 
-
-<div id="perks" style="overflow: hidden !important">
-</div>
-<br>
-
-
-
-
-<img class="accent_img_left" style="overflow: hidden !important"
-  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN0shckVZaOfkZ1afw_dbcCzuQDx0zR_L-_x7jHLddHVj3DrcIBaOpE83DbUTT-NU_MzWfgiNCOFdL07_7rP9tRhkFUvcS1_j5zXmtOb34C7tIW4kPgjKS_bwZ6zqkS4uSDV-TZnfFmgw7mc-z6tnana0K913s58fSPBpCWSRi1Uvi5m8/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(2).png">
-
-
-<div class="roles">
-  <div class="title table">
-    <h1><a class="highlight">Work from anywhere, achieve anything:</a> Discover remote opportunities that match your
-      skills and passions.</h1>
+<div
+  style="width: 100%; background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN0shckVZaOfkZ1afw_dbcCzuQDx0zR_L-_x7jHLddHVj3DrcIBaOpE83DbUTT-NU_MzWfgiNCOFdL07_7rP9tRhkFUvcS1_j5zXmtOb34C7tIW4kPgjKS_bwZ6zqkS4uSDV-TZnfFmgw7mc-z6tnana0K913s58fSPBpCWSRi1Uvi5m8/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(2).png'); ; background-repeat: no-repeat; background-position-x: right 90%  !important; background-size: 110%;">
+  <div id="perks" style="overflow: hidden !important">
   </div>
-  <div id="positions"></div>
+  <br>
 
 
-  <nav aria-label="Page navigation example">
-    <a class="button page-link" id="previousButton">Previous</a></li>
+  <div class="roles">
+    <div class="title table">
+      <h1><a class="highlight">Work from anywhere, achieve anything:</a> Discover remote opportunities that match your
+        skills and passions.</h1>
+    </div>
+    <div id="positions"></div>
 
-    <ul class="pagination" id="role_pagination">
-      <!-- <li>Previous</a></li>
+
+    <nav aria-label="Page navigation example">
+      <a class="button page-link" id="previousButton">Previous</a></li>
+
+      <ul class="pagination" id="role_pagination">
+        <!-- <li>Previous</a></li>
       <li class="page-item"><a class="page-link" href="#">1</a></li>
 
 
       <li class="page-item"><a class="page-link" href="#">2</a></li>
       <li class="page-item"><a class="page-link" href="#">3</a></li> -->
-    </ul>
+      </ul>
 
-    <a class="button page-link" id="nextButton">Next</a></li>
-
-
+      <a class="button page-link" id="nextButton">Next</a></li>
 
 
+
+
+  </div>
 </div>
-
 
 <div class="purpose table" style="overflow: hidden !important">
   <div class="text">
-    <!-- <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibsvMmIxZ8pPkqv_Ih03p0P8NqE2PnyCv0H7b7X4u9i_AH9gxeyHWAHkSgsBlSu4L5XG-T4kvLkQKjZ5Y-WI-yRQE0MEt5A1rCUaJPiispn7h-_3lvA_g2KEiTm2KD3pM8PGNBhL-rWCrG4oDxbo2bxp3SuCtGTvnNUhnC4QlyAhZRppU/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(6).png"> -->
-    <h1 class="highlight"><a>Level Up Tech: Women's Collaborative Network </a></h1>
+    <h1 class="highlight">Level Up Tech: Women's Collaborative Network</h1>
     <h4>The Cyber Bae community empowers and celebrates women at all stages of their tech careers, from aspiring
       professionals to seasoned executives. Our mission is to build a strong, inclusive community, provide opportunities
       for personal growth, and inspire more women to enter the world of technology. Join us on our journey to success!
     </h4>
   </div>
 </div>
+
+
 
 <div class="ceo" style="overflow: hidden !important">
   <h1>Empowering Women and Minorities: Merging the Gender Disparity in IT</h1>
@@ -142,27 +182,55 @@
 
 </div>
 
+<div id="free_quote">
 
-<div id="events-container" style="overflow: hidden !important">
-  <!-- <img class="image " src="./images/swirl_1.png"> -->
-  <h1>Upcoming Events</h1>
+  <div class="container"
+    style="background-repeat:no-repeat; background-size: cover; background-image: url('./images/intro_to_cybersecurity.png');">
+
+  </div>
+  <div class="text ">
+    <h3> <b class="bold" style="color: purple;"> (New) </b>Intro to Cybersecurity</h3>
+    <h6 class="bold" style="color: purple;"> Secure Your Future: Dive into Cybersecurity with Our Immersive Bootcamp!
+    </h6>
+    <p>
+      Empower yourself against digital threats with our comprehensive Cybersecurity Bootcamp. Whether you're new to the
+      field or looking to level up your skills, our immersive program equips you with the essential knowledge and
+      practical expertise to kickstart your cybersecurity career confidently. Join us and stay ahead of the curve in the
+      ever-evolving digital landscape
 
 
-  <div id="event-cards"></div>
-  <div id="events-pagination"></div>
-  <img class="images" src="./images/swirl_1.png">
+    </p>
+    {{ $url := printf "%s/fundamentalsofcybersecurity" .Site.BaseURL }}
+    <a href="{{ $url }}" class="button">Check it Out!</a>
+  </div>
+
+
+</div>
+
+<div class=events
+  style="background-image: url('./images/swirl_1.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+
+  <h1 style="margin-left: 2%;"> Upcoming Events</h1>
+  <div id="events-container" style="overflow: hidden !important">
+    <!-- <img class="image " src="./images/swirl_1.png"> -->
+
+
+    <div id="event-cards"></div>
+    <div id="events-pagination"></div>
+    <!-- <img class="images" src="./images/woman.png"> -->
+
+  </div>
 
 </div>
 
 
 
+<div id="free_quote">
 
-<div id="membership" style="overflow: hidden !important">
-
-  <div class="container">
+  <div class="container" style="background-image: url('./images/membership.png');">
 
   </div>
-  <div class="text">
+  <div class="text ">
     <h3>Cyber Bae is a Global Network</h3>
     <h6 class="highlight"> The Cyber Bae Network is an esteemed community created for both established and aspiring
       women in the field of technology.
@@ -174,14 +242,17 @@
 
 
     </p>
-    <a href="#" class="button">Explore Membership</a>
+    <a href="http://localhost:1313/Cyber-Bae/notFound/" class="button">Explore Membership</a>
   </div>
+
 
 </div>
 
 
 
-<div id="feature_div">
+
+
+<div id="free_quote">
   {{- $s := .Site.Params }}
 
   {{- $posts := where .Site.RegularPages "Type" "in" $s.mainSections }}
@@ -191,7 +262,40 @@
   {{- with $featuredPosts }}
 
   {{- range . }}
-  {{ partial "excerpt" .}}
+
+  <div class="text ">
+    <h3 class="post_link">
+      <a href="{{ .Permalink }}" title="{{ .Title }}"><b class="" style="color: var(--highlight);">Featured: </b>{{
+        .Title | markdownify }}</a>
+    </h3>
+    <div class="pale">
+      {{- $summary := truncate 320 .Summary }}
+      {{- if .Params.summary }}
+      {{- $summary = .Params.summary }}
+      {{- else if .Params.abstract }}
+      {{ $summary = .Params.abstract }}
+      {{- end }}
+      {{ if not ( strings.Contains $summary "<p>" ) }}
+      <p>{{ $summary | markdownify }}</p>
+      {{ else }}
+      {{ $summary | markdownify }}
+      {{ end }}
+      <br>
+      {{- $r := T "read_more" }}
+      <a href="{{ .Permalink }}" title="{{ $r }}" class="excerpt_more button">{{ $r }}</a>
+    </div>
+
+
+  </div>
+
+  {{- with .Params.thumbnail }}
+  <div class="container">
+    {{- partial "image" (dict "file" . "alt" $.Title "type" "thumbnail" "Page" $.Page ) }}
+  </div>
+  {{- end}}
+
+
+
   {{- end }}
   {{- end }}
 
@@ -200,13 +304,19 @@
 
 
 <div class="sponsors" style="overflow: hidden !important">
-  <h3>Cyber Bae is Powered By</h3>
+  <h1>Cyber Bae is Powered By:</h1>
   <div id="sponsor_list">
 
   </div>
 </div>
 
-<!-- <div class="grid-inverse wrap content">
+
+{{- end}}
+
+{{- if and (strings.HasPrefix .Page.Permalink ($url) ) (strings.HasSuffix .Page.Permalink "/") }}
+
+
+<div class="grid-inverse wrap content">
   <div>
     <h2><a>Blog</a></h2>
     <ul class="posts" id="posts">
@@ -218,5 +328,6 @@
       </li>
     </ul>
   </div>
-  {{- partial "sidebar" . }}
-</div>  -->
+</div>
+
+{{- end}}

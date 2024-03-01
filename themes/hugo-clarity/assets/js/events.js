@@ -4,9 +4,7 @@ addEventListener("DOMContentLoaded", (ev) => {
 
   const sponsorContainer = document.getElementById("sponsor_list")
 
-
   const positionContainer = document.getElementById("positions")
-
 
   const perkContainer = document.getElementById("perks")
 
@@ -23,8 +21,8 @@ addEventListener("DOMContentLoaded", (ev) => {
   const pageNumber = 1;
   startIndex = (pageNumber - 1) * 3
 
-
-  upcomingEvents.slice(startIndex, eventDic.lengt).forEach(event => {
+  const eventIndex = (pageNumber - 1) * 2
+  upcomingEvents.slice(eventIndex, eventDic.lengt).forEach(event => {
     eventHTML(eventsContainer, event)
   });
 
@@ -58,7 +56,7 @@ addEventListener("DOMContentLoaded", (ev) => {
       if (count < finalCount || isNaN(finalCount)) {
         pagination(rolePagination, count)
       }
-      count ++
+      count++
     })
 
     Array.from(pageLinks).forEach(link => {

@@ -31,19 +31,19 @@ weight = -107
 
 # social menu links
 
-[[social]]
-name = "github"
-type = "social"
-url = "https://github.com/#"
-weight = 1
-[[social]]
-name = "twitter"
-url = "https://twitter.com/#"
-weight = 2
-[[social]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/#"
-weight = 3
+# [[social]]
+# name = "github"
+# type = "social"
+# url = "https://github.com/#"
+# weight = 1
+# [[social]]
+# name = "twitter"
+# url = "https://twitter.com/#"
+# weight = 2
+# [[social]]
+# name = "linkedin"
+# url = "https://www.linkedin.com/in/#"
+# weight = 3
 # [[social]]
 # name = "rss"
 # url = "index.xml"

@@ -1,21 +1,11 @@
 //dictionary for our sponsors
 const sponsorDic = [
     {
-        img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdx6EmC9LY7F79bzXBLekYqW_GmRD1Yk3tA5yg0WWM6D771Bh-8j41dYeU3T5eNtuxSWgmbTpUNhyc6EvvcwZvDtLmtAzrfNstElwY14hMHhV00irhLRNwkIuZ3_-YNv7eoeftzV-cdTRgmoLI4tCFJUFjHYOU7VWEfWtf9rAZFNRf2Yo/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png",
-        description: "include brief description of sponsor"
+        img: "./images/techdebtcrew.png",
+        url: "https://www.techdebtcrew.com",
+        description: "Tech Debt Crew, a minority-owned technical marketing agency, offers comprehensive solutions tailored to support businesses across diverse industries, driving growth and success."
     },
-    {
-        img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdx6EmC9LY7F79bzXBLekYqW_GmRD1Yk3tA5yg0WWM6D771Bh-8j41dYeU3T5eNtuxSWgmbTpUNhyc6EvvcwZvDtLmtAzrfNstElwY14hMHhV00irhLRNwkIuZ3_-YNv7eoeftzV-cdTRgmoLI4tCFJUFjHYOU7VWEfWtf9rAZFNRf2Yo/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png",
-        description: "include brief description of sponsor"
-    },
-    {
-        img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdx6EmC9LY7F79bzXBLekYqW_GmRD1Yk3tA5yg0WWM6D771Bh-8j41dYeU3T5eNtuxSWgmbTpUNhyc6EvvcwZvDtLmtAzrfNstElwY14hMHhV00irhLRNwkIuZ3_-YNv7eoeftzV-cdTRgmoLI4tCFJUFjHYOU7VWEfWtf9rAZFNRf2Yo/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png",
-        description: "include brief description of sponsor"
-    },
-    {
-        img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdx6EmC9LY7F79bzXBLekYqW_GmRD1Yk3tA5yg0WWM6D771Bh-8j41dYeU3T5eNtuxSWgmbTpUNhyc6EvvcwZvDtLmtAzrfNstElwY14hMHhV00irhLRNwkIuZ3_-YNv7eoeftzV-cdTRgmoLI4tCFJUFjHYOU7VWEfWtf9rAZFNRf2Yo/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png",
-        description: "include brief description of sponsor"
-    },
+  
 ];
 
 //dictionary for perks for signing up with us
@@ -55,13 +45,7 @@ const eventDic = [
         rsvpLink: "https://example.com/rsvp/coding-workshop",
         img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE-OXdp-Aah1C_L5hKlk8KQHHSFHNHEZuoQEk9Rb5LEJncc0rgVXeX-AwLP0U7Zr79pIQdDShltnjWQghbojCb0ThjGFsv_J9CFsQc-KsqCQEmrSYf3g-FR0jMKjSrTWXykYIhrOuJNLQjYLK1yeBobKxyMnhZbRKjsaGmpvUX7xc3Xuk/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png"
     },
-    {
-        title: "Beyond the Chat: Supercharge Your Productivity with ChatGPT",
-        description: "Learn the basics of HTML, CSS, and JavaScript in this interactive workshop.",
-        date: new Date(2024, 3, 6), // May 27, 2024
-        rsvpLink: "https://example.com/rsvp/coding-workshop",
-        img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE-OXdp-Aah1C_L5hKlk8KQHHSFHNHEZuoQEk9Rb5LEJncc0rgVXeX-AwLP0U7Zr79pIQdDShltnjWQghbojCb0ThjGFsv_J9CFsQc-KsqCQEmrSYf3g-FR0jMKjSrTWXykYIhrOuJNLQjYLK1yeBobKxyMnhZbRKjsaGmpvUX7xc3Xuk/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(7).png"
-    },
+ 
 ];
 
 const positionDic = [

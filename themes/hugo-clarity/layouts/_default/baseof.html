@@ -1,6 +1,8 @@
 {{- $s := site.Params }}
 {{- $p := .Params }}
 {{- $codeBlockConfig := partial "func/getCodeBlockSettings" . }}
+{{ $baseUrl := .Page.Permalink}}
+
 <!DOCTYPE html>
 <html lang="{{ .Lang }}" data-figures="{{ $p.figurePositionShow }}" {{ if .IsPage }} class="page" {{ else if .IsHome }}
   class="home" {{ end }} {{ with $s.enforceLightMode }} data-mode="lit" {{ end }} {{ with $s.enforceDarkMode }}
@@ -26,7 +28,10 @@
 <body data-code="{{ $codeBlockConfig.max }}" data-lines="{{ $codeBlockConfig.lines }}" id="documentTop"
   data-lang="{{ .Lang }}">
   {{- partialCached "scripts/google/tag-manager" (dict "noscript" true) }}
+  
+  {{- if ne .Page.Permalink .Site.BaseURL }}
   {{- partial "header" . }}
+  {{- end}}
   <main>
     {{- block "main" . }}{{ end }}
   </main>

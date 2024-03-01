@@ -1,8 +1,8 @@
 {{- $params := .Site.Params }}
 {{- $centerLogo := $params.centerLogo }}
 {{ $logo := $params.logo }}
-<header class="nav_header" style="max-width: 100vw;" >
-  <nav class="nav">
+<div class="nav_header"  >
+  <nav class="nav box">
     {{- if $centerLogo }}
       {{- partialCached "logo" (dict "logo" $logo "class" "nav_hide") }}
     {{- else }}
@@ -16,18 +16,14 @@
       {{- else }}
         {{ partial "nav" (dict "context" . "menu" .Site.Menus.main) }}
       {{- end }}
-      <!-- {{ if .Site.IsMultiLingual }}
-      <div class="nav_parent">
-        <a href="#" class="nav_item">{{ $params.languageMenuName }}</a>
-        <div class="nav_sub">
-          <span class="nav_child"></span>
-          {{ range .Site.Home.AllTranslations }}
-          <a href="{{ .Permalink }}" class="nav_child nav_item">{{ .Language.LanguageName }}</a>
-          {{ end }}
-        </div>
-        {{ partial "search/widget" . }}
-      </div>
-      {{- end }} -->
+
+      <ul>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-linkedin"></i>
+      </ul>
+      
       
       {{- if $centerLogo }}
         {{- partial "logo" (dict "logo" $logo "class" "nav_center") }}
@@ -35,4 +31,4 @@
       {{- partialCached "follow" . }}
     </div>
   </nav>
-</header>
+</div>
