@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cyber Bae</title>
+    <link>http://localhost:1313/Cyber-Bae/</link>
+    <description>Recent content on Cyber Bae</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 13 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/Cyber-Bae/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mock Article</title>
+      <link>http://localhost:1313/Cyber-Bae/post/mock/</link>
+      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Cyber-Bae/post/mock/</guid>
+      <description>Programming is a valuable skill that can be used in a variety of industries. In 2024, the demand for programmers is expected to continue to grow, making it a great time to start learning how to code.&#xA;Here are some of the benefits of programming in 2024: High demand and good pay: Programmers are in high demand, and they can command high salaries. The median salary for a programmer in the United States is over $100,000 per year.</description>
+    </item>
+    <item>
+      <title>The Benefits of Programming in 2024</title>
+      <link>http://localhost:1313/Cyber-Bae/post/benefits-of-programming-copy-2/</link>
+      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Cyber-Bae/post/benefits-of-programming-copy-2/</guid>
+      <description>Programming is a valuable skill that can be used in a variety of industries. In 2024, the demand for programmers is expected to continue to grow, making it a great time to start learning how to code.&#xA;Here are some of the benefits of programming in 2024: High demand and good pay: Programmers are in high demand, and they can command high salaries. The median salary for a programmer in the United States is over $100,000 per year.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/Cyber-Bae/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Cyber-Bae/about/</guid>
+      <description>Empowering the Next Generation of Tech Heroes In the ever-evolving landscape of technology, where innovation thrives and challenges abound, one crucial aspect often lacks diversity: representation. At [Organization Name], we&#39;re on a mission to bridge that gap by empowering women and minorities to embrace the exciting world of cybersecurity and technology.&#xA;Our Vision: Building a More Inclusive Tech Future We believe that everyone, regardless of their background or identity, deserves the opportunity to explore and excel in the tech field.</description>
+    </item>
+    <item>
+      <title>Fundamentals of Cybersecurity</title>
+      <link>http://localhost:1313/Cyber-Bae/fundamentalsofcybersecurity/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Cyber-Bae/fundamentalsofcybersecurity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blog</title>
+      <link>http://localhost:1313/Cyber-Bae/blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Cyber-Bae/blog/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
