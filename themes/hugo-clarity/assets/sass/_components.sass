@@ -6,7 +6,11 @@
   top: -0.5rem
   left: 1rem
 .second_header
+
+  @media screen and(max-width: 1000px)
+    display: none
   height: fit-content
+  max-width: 1440px
   text-align: center
   justify-content: center
   align-content: center
@@ -140,6 +144,7 @@ h1, h2, h3, h4, h5, h6
     margin: 0 auto !important
     overflow: hidden !important
     display: flex
+    margin: 2% auto !important
 
     width: 100% !important
 
@@ -163,6 +168,7 @@ h1, h2, h3, h4, h5, h6
   // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
   width: 100%
   height: auto
+
   display: flex
   background: var(--table-bg)
   padding: 0
@@ -238,6 +244,7 @@ h1, h2, h3, h4, h5, h6
 html, body
   overflow-x: hidden !important
   width: 100vw !important
+  max-width: 1440px
   position: relative !important
   margin: 0px auto !important
   max-width: 100% !important
@@ -333,6 +340,7 @@ html, body
   top: 0
   left: 0
   width: 100%
+  max-width: 1440px
   height: 100vh
   padding: 20px
   background-size: cover
@@ -349,6 +357,8 @@ html, body
     float: left !important
     margin-right: 80%
     top: 0 !important
+    @media screen and (max-width: 1190px)
+      display: none
   @media screen and (min-width: 630px) and (max-width: 1100px)
     height: 100% !important
     .elements
@@ -423,9 +433,6 @@ html, body
     b
       color: #FA8F88
 
-.nav_open+.nav_sub .nav_child:not(:first-child)
-  color: #9a3587
-  font-weight: bolder
 
 article
   margin-top: 10%
@@ -438,12 +445,13 @@ article
   @include content
 
   ul
-    margin-left: 20%
-    margin-top: 2%
+    display: flex
+    margin: 2% auto
+    top: 50%
     width: 100% !important
     i
       font-size: 120%
-      margin-right: 10%
+      margin-right: 5%
       color: var(--text)
       cursor: pointer
 
@@ -463,6 +471,11 @@ article
     display: flex
     flex: 1
   &_header
+    @media screen and(max-width: 1390px)
+      top: 0 
+      img
+        width: 20%
+
     background-color: var(--choice-bg)
     color: var(--text)
     padding: 0 1.5rem
@@ -590,6 +603,9 @@ article
   font-size: 120%
 .content, .footer
   padding: 1.5rem
+  margin: 0px auto
+  align-items: center
+  justify-content: center
   @media screen and (min-width: 1441px)
     padding: 1.5rem 0
 .grid-inverse
@@ -637,6 +653,7 @@ article
 
 .intro_video
   display: flex
+  max-width: 1440px
   background-color: var(--table-bg)
   margin-bottom: 3%
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
@@ -669,6 +686,40 @@ article
 footer
   background-size: cover
 .footer
+  width: 100 vw
+  margin: 0px auto
+  max-width: var(--max-width)
+  .footer_inner 
+    width: 100vw
+    .elements
+      display: flex 
+      width: 100vw
+      max-width: 1440px !important
+      margin: 0px auto
+
+      @media screen and(max-width: 625px)
+        display: block !important
+        width: 100vw !important
+
+        .col
+          width: 100% !important
+          max-height: none !important
+          min-height: auto !important
+          margin-bottom: 5% !important
+
+
+      .col
+        flex-grow: 1
+        max-height: 50vh
+        min-height: 50vh
+        width: 30%
+
+        .socials
+          display: flex
+          width: 100% !important
+          text-align: right
+          p
+            margin-left: 8%
   // border-top: 1px solid $xhaze
   // background: var(--footer-bg)
   margin-top: 2rem
@@ -695,7 +746,7 @@ footer
     width: 100%
   .elements
     display: flex
-    width: 100vw
+    width: 100vw !important
 
     .connect
       width: 25% !important
@@ -781,7 +832,6 @@ footer
     color: $light
     margin: 0.1rem 0 0.1rem 0.2rem
     font-size: 0.7rem
-
 #feature_div
   width: 100%
   background-color: var(--table-bg) !important
@@ -791,6 +841,7 @@ footer
   height: fit-content
   .post_item
     width: 100%
+
 
     .excerpt
       display: flex
@@ -894,14 +945,17 @@ footer
     border-radius: 0
     margin-bottom: 0px
     flex: 1
-    margin-right: 5%
+    margin: 1% auto
 
     @media screen and (max-width: 667px)
       width: 100%
 
+picture 
+  img
+    min-width: 100% !important
 .post
   .excerpt_thumbnail
-    width: 30%
+    min-width: 100% !important
   &_link, &_title
     margin-bottom: 0
   &_link
@@ -910,7 +964,7 @@ footer
       display: block
       line-height: 1.35
   &s
-    margin-top: 2rem
+    margin-top: 5%
   &_header
     height: 50vh
     max-height: 35rem
@@ -928,6 +982,7 @@ footer
       padding-top: 0
   &_item
     // box-shadow: 0  2.25rem 1.25rem -1.25rem var(--shadow)
+    margin-bottom: 3rem
     border-radius: 0.5rem
     background: var(--table-bg)
     width: 50%
@@ -945,7 +1000,7 @@ footer
         top: 0
         left: 0
         height: 100vh
-        overflow-y: hidden
+        overflow-y: auto
         width: 100vw
         padding: 5rem 1.5rem
         background: var(--translucent-light)
