@@ -2,6 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/Cyber-Bae/</loc>
+    <lastmod>2024-01-22T09:40:00-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/Cyber-Bae/pt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/Cyber-Bae/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/Cyber-Bae/post/</loc>
+    <lastmod>2024-01-22T09:40:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/Cyber-Bae/2024/01/why-strong-email-signature-is-vital-in.html</loc>
+    <lastmod>2024-01-22T09:40:00-08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/Cyber-Bae/categories/</loc>
     <lastmod>2024-01-13T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -18,26 +37,7 @@
     <loc>http://localhost:1313/Cyber-Bae/tags/coding/</loc>
     <lastmod>2024-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Cyber-Bae/</loc>
-    <lastmod>2024-01-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/Cyber-Bae/pt/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/Cyber-Bae/"
-                />
-  </url><url>
     <loc>http://localhost:1313/Cyber-Bae/series/Job-Search-Bootcamp/</loc>
-    <lastmod>2024-01-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/Cyber-Bae/post/mock/</loc>
-    <lastmod>2024-01-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/Cyber-Bae/post/</loc>
     <lastmod>2024-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/Cyber-Bae/tags/programming/</loc>
@@ -74,6 +74,15 @@
   </url><url>
     <loc>http://localhost:1313/Cyber-Bae/post/benefits-of-programming-copy-2/</loc>
     <lastmod>2024-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/Cyber-Bae/2023/04/attention-all-scrum-masters-heres-why.html</loc>
+    <lastmod>2023-04-14T05:13:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/Cyber-Bae/tags/Lifestyle/</loc>
+    <lastmod>2023-04-14T05:13:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/Cyber-Bae/2023/04/succeeding-as-woman-in-tech.html</loc>
+    <lastmod>2023-04-06T16:47:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/Cyber-Bae/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>

@@ -341,6 +341,30 @@ addEventListener("DOMContentLoaded", (ev) => {
   const upcomingEvents = eventDic.filter(event => event.date >= new Date());
 
   const pageNumber = 1;
+
+  const nav = document.getElementById("nav")
+
+  if (nav != null) {
+    // Get the current URL
+    const currentURL = window.location.href;
+
+    // Get the base URL of your website
+    const baseURL = window.location.origin +"/Cyber-Bae/";
+
+
+    console.log(`baseURL: ${baseURL}`)
+    console.log(`this is the current url: ${currentURL}`)
+
+
+    // if (currentURL != baseURL || window.matchMedia("(max-width: 1200px)") === true) {
+    //   nav.style.display = "block ";
+    // } else{
+    //   nav.style.display = "none";
+    // }
+
+  }
+
+
   startIndex = (pageNumber - 1) * 3
 
   const eventIndex = (pageNumber - 1) * 2
