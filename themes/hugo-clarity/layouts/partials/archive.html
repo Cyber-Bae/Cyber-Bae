@@ -22,156 +22,60 @@
 
 <div class="header" style="overflow-x: hidden !important;" width="100vw">
 
-  {{- if $centerLogo }}
-  {{- partialCached "logo" (dict "logo" $logo "class" "nav_hide") }}
-  {{- else }}
-  {{- partialCached "logo" (dict "logo" $logo) }}
-  {{- end }}
-  <div class="elements">
-
-    <div class="text">
-
-      <h1 class="tagline">Tech with Heart. Code with Purpose. <b>Join the Movement.</b></h1>
-      <p>Looking to jumpstart your career? Want to expand your network and hone your skills? Look no further than our
-        comprehensive resource, designed specifically for ambitious individuals like yourself. From resume tips to
-        networking events, we provide everything you need to launch your career, make valuable connections, and
-        continuously improve your skills. Trust us as your go-to hub for professional development and growth.</p>
-      <a href="#" class="button">Become a Changemaker</a>
-    </div>
+  <div class="left_header"></div>
 
 
-    <img src="./images/check.png">
+  <div class="right_header" id="right_header"> 
+     
 
   </div>
 
 
 </div>
 
-<div class="second_header">
-  <nav class="nav box">
-    {{- if $centerLogo }}
-    {{- partialCached "logo" (dict "logo" $logo "class" "nav_hide") }}
-    {{- else }}
-    {{- partialCached "logo" (dict "logo" $logo) }}
-    {{- end }}
-    <div class='nav_body nav_body_{{ default "left" $params.mobileNavigation }}'>
-      {{ $context := . }}
-      {{ $menuData := .Site.Data.menu }}
-      {{ with $menuData }}
-      {{ partial "nav" (dict "context" $context "menu" $menuData) }}
-      {{- else }}
-      {{ partial "nav" (dict "context" . "menu" .Site.Menus.main) }}
-      {{- end }}
+<div class="network" style="background-color: #1F2B21;">
 
-      <ul>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-youtube"></i>
-        <i class="fab fa-linkedin"></i>
-      </ul>
+  <div class="headline">
+    <h1> Women Networking in Tech</h1>
+    <img src="./images/ceo.png">
+  </div>
 
-      {{- if $centerLogo }}
-      {{- partial "logo" (dict "logo" $logo "class" "nav_center") }}
-      {{- end }}
-      {{- partialCached "follow" . }}
-    </div>
-  </nav>
+  <p>
+    We just moved into the neighborhood, but it's like we've been here forever! You've welcomed us like old friends, dropping by with ready smiles and eager appetites.
+
+<b style="margin-top: 10%;">That's why we vow to always serve up goodness. </b>
+
+Our food will always be organically grown, locally sourced, slow-cooked, and served with warm smiles. We're family now. And this is how we cook for those we love.
+
+Welcome home.
+  </p>
+
+
 
 </div>
+
 
 {{- partial "header" . }}
 
 
-<div class="intro_video" style="overflow: hidden !important">
-
-  <video autoplay="" loop="" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
-    <source src="./videos/video.ogv" type="video/ogg" data-wf-ignore="true">
-    <source src="./videos/video.mov" type="video/mp4" data-wf-ignore="true">
-    <source src="./videos/video.webm" type="video/webm" data-wf-ignore="true">
-    <source src="./videos/video.mp4" type="video/mp4" data-wf-ignore="true">
-  </video>
 
 
-  <style>
-    ul,
-    ol {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-  </style>
-  <div class="text">
-    <h1>🔐 Why Choose Our Course?</h1>
-    <ul>
-      <li><b class="bold">Expert-Led Training:</b> Learn from industry professionals with hands-on experience.</li>
-      <li><b class="bold">Real-world Scenarios:</b> Tackle practical challenges to enhance your problem-solving
-        skills.</li>
-      <li><b class="bold">Certification Ready:</b> Gain globally recognized certifications upon course completion.
-      </li>
-      <li><b class="bold">Interactive Learning:</b> Engage in dynamic discussions and collaborate with peers.</li>
-    </ul>
-    <a href="#" class="button">Sign Up Now</a>
-
-
-  </div>
-
-
-
-</div>
-
-
-<div
+<div class="benefits"
   style="width: 100%; background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN0shckVZaOfkZ1afw_dbcCzuQDx0zR_L-_x7jHLddHVj3DrcIBaOpE83DbUTT-NU_MzWfgiNCOFdL07_7rP9tRhkFUvcS1_j5zXmtOb34C7tIW4kPgjKS_bwZ6zqkS4uSDV-TZnfFmgw7mc-z6tnana0K913s58fSPBpCWSRi1Uvi5m8/s1600/Beige%20Business%20Brand%20Color%20Wheel%20Palette%20Facebook%20Post%20(2).png'); ; background-repeat: no-repeat; background-position-x: right 90%  !important; background-size: 110%;">
   <div id="perks" style="overflow: hidden !important">
   </div>
   <br>
 
 
-  <div class="roles">
-    <div class="title table">
-      <h1><a class="highlight">Work from anywhere, achieve anything:</a> Discover remote opportunities that match your
-        skills and passions.</h1>
-    </div>
-    <div id="positions"></div>
-
-
-    <nav aria-label="Page navigation example">
-      <a class="button page-link" id="previousButton">Previous</a></li>
-
-      <ul class="pagination" id="role_pagination">
-        <!-- <li>Previous</a></li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-
-
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li> -->
-      </ul>
-
-      <a class="button page-link" id="nextButton">Next</a></li>
-
-
-
-
-  </div>
+ 
 </div>
-
-<div class="purpose table" style="overflow: hidden !important">
-  <div class="text">
-    <h1 class="highlight">Level Up Tech: Women's Collaborative Network</h1>
-    <h4>The Cyber Bae community empowers and celebrates women at all stages of their tech careers, from aspiring
-      professionals to seasoned executives. Our mission is to build a strong, inclusive community, provide opportunities
-      for personal growth, and inspire more women to enter the world of technology. Join us on our journey to success!
-    </h4>
-  </div>
-</div>
-
 
 
 <div class="ceo" style="overflow: hidden !important">
   <h1>Empowering Women and Minorities: Merging the Gender Disparity in IT</h1>
   <div class="description">
     <img
-      src="https://media.licdn.com/dms/image/D4E03AQHJ75r8mi3xnw/profile-displayphoto-shrink_400_400/0/1703620253015?e=1712793600&v=beta&t=gJWZo19HRjadtdoxSsLbKWOw_sCL77Ui96evN0cZgWU">
+      src="https://static.wixstatic.com/media/fa9fb6_a9600bdbc3ae469e96e91c5c952af37c~mv2.jpg/v1/fill/w_162,h_288,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_auto/fa9fb6_a9600bdbc3ae469e96e91c5c952af37c~mv2.jpg">
 
     <div class="text">
       <h4>"We allow women to create their own fate and have more control over their careers by teaching them and
@@ -182,9 +86,54 @@
 
 </div>
 
+<div class="roles">
+  <!-- <div class="title table">
+    <h1><a class="highlight">Work from anywhere, achieve anything:</a> Discover remote opportunities that match your
+      skills and passions.</h1>
+  </div> -->
+  <div id="positions"></div>
+
+
+  <nav aria-label="Page navigation example">
+    <a class="button page-link" id="previousButton">Previous</a></li>
+
+    <ul class="pagination" id="role_pagination">
+      <!-- <li>Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+
+
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+    </ul>
+
+    <a class="button page-link" id="nextButton">Next</a></li>
+
+
+
+
+</div>
+
+
+
+
+
+
 <div id="free_quote">
 
-  <div class="container"
+  {{- $s := .Site.Params }}
+
+  {{- $posts := where .Site.RegularPages "Type" "in" $s.mainSections }}
+  {{- $featured := default 1 $s.numberOfFeaturedPosts }}
+  {{- $featuredPosts := last $featured (where $posts "Params.featured" true)}}
+  {{- with $featuredPosts }}
+  {{- range . }}
+  <div class="featured">
+    {{ partial "featured" .}}
+    {{- end }}
+    {{- end }}
+  </div>
+
+  <!-- <div class="container"
     style="background-repeat:no-repeat; background-size: cover; background-image: url('./images/intro_to_cybersecurity.png');">
 
   </div>
@@ -202,102 +151,11 @@
     </p>
     {{ $url := printf "%s/fundamentalsofcybersecurity" .Site.BaseURL }}
     <a href="{{ $url }}" class="button">Check it Out!</a>
-  </div>
+  </div> -->
 
 
 </div>
 
-<div class=events
-  style="background-image: url('./images/swirl_1.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
-
-  <h1 style="margin-left: 2%;"> Upcoming Events</h1>
-  <div id="events-container" style="overflow: hidden !important">
-    <!-- <img class="image " src="./images/swirl_1.png"> -->
-
-
-    <div id="event-cards"></div>
-    <div id="events-pagination"></div>
-    <!-- <img class="images" src="./images/woman.png"> -->
-
-  </div>
-
-</div>
-
-
-
-<div id="free_quote">
-
-  <div class="container" style="background-image: url('./images/membership.png');">
-
-  </div>
-  <div class="text ">
-    <h3>Cyber Bae is a Global Network</h3>
-    <h6 class="highlight"> The Cyber Bae Network is an esteemed community created for both established and aspiring
-      women in the field of technology.
-    </h6>
-    <p>Welcome to our thriving community of passionate freelancers, creative entrepreneurs, and savvy contractors from
-      every corner of the globe. Together, we join forces to break barriers and build a global network of innovation and
-      collaboration. Our diverse talents and perspectives ignite a powerful force for positive change and endless
-      possibilities. Join us on this journey towards limitless potential and undeniable success.
-
-
-    </p>
-    <a href="http://localhost:1313/Cyber-Bae/notFound/" class="button">Explore Membership</a>
-  </div>
-
-
-</div>
-
-
-
-
-
-<div id="free_quote">
-  {{- $s := .Site.Params }}
-
-  {{- $posts := where .Site.RegularPages "Type" "in" $s.mainSections }}
-
-  {{- $featured := default 1 $s.numberOfFeaturedPosts }}
-  {{- $featuredPosts := last $featured (where $posts "Params.featured" true)}}
-  {{- with $featuredPosts }}
-
-  {{- range . }}
-
-  <div class="text ">
-    <h3 class="post_link">
-      <a href="{{ .Permalink }}" title="{{ .Title }}"><b class="" style="color: var(--highlight);">Featured: </b>{{
-        .Title | markdownify }}</a>
-    </h3>
-    <div class="pale">
-      {{- $summary := truncate 320 .Summary }}
-      {{- if .Params.summary }}
-      {{- $summary = .Params.summary }}
-      {{- else if .Params.abstract }}
-      {{ $summary = .Params.abstract }}
-      {{- end }}
-      {{ if not ( strings.Contains $summary "<p>" ) }}
-      <p>{{ $summary | markdownify }}</p>
-      {{ else }}
-      {{ $summary | markdownify }}
-      {{ end }}
-      <br>
-      {{- $r := T "read_more" }}
-      <a href="{{ .Permalink }}" title="{{ $r }}" class="excerpt_more button">{{ $r }}</a>
-    </div>
-
-
-  </div>
-
-  
-
-
-
-
-
-  {{- end }}
-  {{- end }}
-
-</div>
 
 
 

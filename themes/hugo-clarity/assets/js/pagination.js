@@ -4,6 +4,19 @@ function paginationDisplay(container) {
   const endIndex = Math.min(startIndex + elmsPerPage, dic.length);
 }
 
+
+function headerHTML (headerContainer, event) {
+  const eventCard = document.createElement("div");
+  eventCard.classList.add("header-card");
+  eventCard.style.backgroundColor = event.color
+
+  eventCard.innerHTML = `
+    <h1>${event.title}</h1>
+  `;
+
+  headerContainer.appendChild(eventCard);
+}
+
 function eventHTML(eventsContainer, event) {
   const eventCard = document.createElement("div");
 

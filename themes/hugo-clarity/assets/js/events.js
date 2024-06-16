@@ -4,6 +4,8 @@ addEventListener("DOMContentLoaded", (ev) => {
 
   const sponsorContainer = document.getElementById("sponsor_list")
 
+  const headerContainer = document.getElementById("right_header")
+
   const positionContainer = document.getElementById("positions")
 
   const perkContainer = document.getElementById("perks")
@@ -34,12 +36,6 @@ addEventListener("DOMContentLoaded", (ev) => {
     console.log(`this is the current url: ${currentURL}`)
 
 
-    // if (currentURL != baseURL || window.matchMedia("(max-width: 1200px)") === true) {
-    //   nav.style.display = "block ";
-    // } else{
-    //   nav.style.display = "none";
-    // }
-
   }
 
 
@@ -62,6 +58,13 @@ addEventListener("DOMContentLoaded", (ev) => {
       sponsorHTML(sponsorContainer, event)
 
     })
+  }
+
+  if (headerContainer != null) {
+    headerCardsDic.forEach(event =>{
+      headerHTML(headerContainer, event)
+    });
+
   }
 
   let count = 1

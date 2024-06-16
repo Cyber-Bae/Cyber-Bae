@@ -1,0 +1,45 @@
+<div class="post_item" style="width: 100%; margin-bottom: 0%; background-color: rgb(52, 149, 116);">
+    <div class="excerpt" style="display: flex;">
+      {{- with .Params.thumbnail }}
+
+
+      {{ $imageURL := partial "image" (dict "file" . "alt" $.Title "type" "thumbnail" "Page" $.Page ) }}
+
+      <div class="excerpt_thumbnail" style="min-width: 50%; background-color: black; min-height: 100% !important; background-image: $imageURL.file;";>
+      
+        {{ $imageURL }}
+    </div>
+      {{- end}}
+   
+      {{- with .Params.thumbnail }}
+      <div class="excerpt_footer partition">
+        
+        {{ else }}
+        <div class="excerpt_footer">
+          {{- end }}
+          <div class="excerpt_header">
+            <h3 class="post_link">
+              <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title | markdownify  }}</a>
+            </h3>
+            {{ partial "post-meta" . }}
+          </div>
+          <div class="pale">
+            {{- $summary := truncate 320 .Summary }}
+            {{- if .Params.summary }}
+              {{- $summary = .Params.summary }}
+            {{- else if .Params.abstract }}
+              {{ $summary = .Params.abstract }}
+            {{- end }}
+            {{ if not ( strings.Contains $summary "<p>" ) }}
+              <p>{{ $summary | markdownify }}</p>
+            {{ else }}
+              {{ $summary | markdownify }}
+            {{ end }}
+            <br>
+            {{- $r := T "read_more" }}
+            <a href="{{ .Permalink }}" title="{{ $r }}" class="excerpt_more button">{{ $r }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  

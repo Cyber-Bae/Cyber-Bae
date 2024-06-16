@@ -1,4 +1,39 @@
 @media screen and (max-width: $mobile-menu-breakpoint)
+
+ 
+  .network
+    display: block
+    align-items: center
+    justify-content: center
+
+    .headline
+      display: block
+      width: 100%
+      h1
+        width: 75%
+      img
+        width: 500%
+    p
+      width: 90%
+      margin-top: 5%
+      margin-left: 5%
+  .header
+    display: block
+    margin-top: 20%
+
+    .right_header
+      width: 70%
+  .header .right_header .header-card
+    width: 100%
+    min-height: 33.33%
+    text-align: center
+    justify-content: center
+    top: 50%
+
+  .nav_header ul
+    width: 50%
+    margin-left: 5%
+
   .nav
     // padding-bottom: 2rem
     top: 0
@@ -10,7 +45,7 @@
       max-width: 16.5rem
       top: 0
       bottom: 0
-      background-color: $bg
+      background-color: orange
       transition: transform 0.3s var(--easing)
       &_right
         transform: translateX(100vw)
@@ -33,7 +68,7 @@
       align-items: center
       svg
         width: 1.25rem
-        fill: var(--light)
+        fill: black
         height: 1.25rem
         display: none
         &:first-child
@@ -73,7 +108,7 @@
         padding-right: 1.5rem
       &_parent
         &:first-child
-         margin-top: 4.4rem
+          margin-top: 4.4rem
 
       .follow
         justify-content: flex-start
